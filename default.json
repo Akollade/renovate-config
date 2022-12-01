@@ -1,0 +1,9 @@
+{
+    "extends": [
+        "config:base",
+        ":separatePatchReleases"
+    ],
+    "timezone": "Europe/Paris",
+    "rangeStrategy": "update-lockfile",
+    "commitMessagePrefix": ":arrow_up:"
+}
