@@ -27,6 +27,47 @@
                 "drupal/core-project-message"
             ],
             "enabled": false
+        },
+        {
+            "datasources": ["packagist"],
+            "groupName": "twig packages",
+            "groupSlug": "twig",
+            "packagePatterns": [
+                "^twig/"
+            ]
+        },
+        {
+            "groupName": "eslint",
+            "packagePatterns": [
+                "eslint"
+            ]
+        },
+        {
+            "groupName": "bazinga-js-translator packages",
+            "groupSlug": "bazinga-js-translator",
+            "packageNames": [
+                "willdurand/js-translation-bundle",
+                "bazinga-translator"
+            ]
+        },
+        {
+            "packageNames": [
+                "pre-commit",
+                "pre-commit/pre-commit-hooks",
+                "adrienverge/yamllint"
+            ],
+            "minor": {
+                "automerge": true
+            }
+        },
+        {
+            "groupName": "phpstan packages",
+            "groupSlug": "phpstan",
+            "packagePatterns": [
+                "^phpstan/",
+                "jangregor/phpstan-prophecy"
+            ],
+            "automerge": true
         }
     ]
 }
