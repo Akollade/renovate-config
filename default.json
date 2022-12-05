@@ -5,5 +5,28 @@
     ],
     "timezone": "Europe/Paris",
     "rangeStrategy": "update-lockfile",
-    "commitMessagePrefix": ":arrow_up:"
+    "commitMessagePrefix": ":arrow_up:",
+    "packageRules": [{
+            "datasources": ["packagist"],
+            "updateTypes": ["patch", "minor"],
+            "packageNames": [
+                "drupal/core-dev-pinned",
+                "drupal/core-recommended",
+                "drupal/core-composer-scaffold",
+                "drupal/core-project-message"
+            ],
+            "groupName": "Drupal Core"
+        },
+        {
+            "datasources": ["packagist"],
+            "updateTypes": ["major"],
+            "packageNames": [
+                "drupal/core-dev-pinned",
+                "drupal/core-recommended",
+                "drupal/core-composer-scaffold",
+                "drupal/core-project-message"
+            ],
+            "enabled": false
+        }
+    ]
 }
