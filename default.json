@@ -14,7 +14,8 @@
                 "drupal/core-dev-pinned",
                 "drupal/core-recommended",
                 "drupal/core-composer-scaffold",
-                "drupal/core-project-message"
+                "drupal/core-project-message",
+                "drupal/core-vendor-hardening"
             ],
             "groupName": "Drupal Core"
         },
@@ -25,7 +26,8 @@
                 "drupal/core-dev-pinned",
                 "drupal/core-recommended",
                 "drupal/core-composer-scaffold",
-                "drupal/core-project-message"
+                "drupal/core-project-message",
+                "drupal/core-vendor-hardening"
             ],
             "enabled": false
         },
