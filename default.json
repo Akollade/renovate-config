@@ -68,7 +68,8 @@
             "groupSlug": "phpstan",
             "packagePatterns": [
                 "^phpstan/",
-                "jangregor/phpstan-prophecy"
+                "jangregor/phpstan-prophecy",
+                "mglaman/phpstan-drupal"
             ],
             "automerge": true
         },
