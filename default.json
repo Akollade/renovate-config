@@ -61,7 +61,7 @@
             ],
             "minor": {
                 "automerge": true,
-                "platformAutomerge": false
+                "automergeType": "branch"
             }
         },
         {
@@ -73,7 +73,7 @@
                 "mglaman/phpstan-drupal"
             ],
             "automerge": true,
-            "platformAutomerge": false
+            "automergeType": "branch"
         },
         {
             "packageNames": [
