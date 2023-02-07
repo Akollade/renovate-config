@@ -60,7 +60,8 @@
                 "adrienverge/yamllint"
             ],
             "minor": {
-                "automerge": true
+                "automerge": true,
+                "platformAutomerge": false
             }
         },
         {
@@ -71,14 +72,16 @@
                 "jangregor/phpstan-prophecy",
                 "mglaman/phpstan-drupal"
             ],
-            "automerge": true
+            "automerge": true,
+            "platformAutomerge": false
         },
         {
             "packageNames": [
                 "sass/dart-sass"
             ],
             "patch": {
-                "automerge": true
+                "automerge": true,
+                "platformAutomerge": false
             }
         }
     ]
