@@ -7,6 +7,7 @@
     "timezone": "Europe/Paris",
     "rangeStrategy": "update-lockfile",
     "commitMessagePrefix": ":arrow_up:",
+    "commitBodyTable": true,
     "prConcurrentLimit": 1,
     "packageRules": [{
             "datasources": ["packagist"],
