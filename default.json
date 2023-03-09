@@ -75,15 +75,17 @@
                 "mglaman/phpstan-drupal"
             ],
             "automerge": true,
-            "automergeType": "branch"
+            "automergeType": "branch",
+              "schedule": [
+                "every weekend"
+              ]
         },
         {
             "packageNames": [
                 "sass/dart-sass"
             ],
             "patch": {
-                "automerge": true,
-                "platformAutomerge": false
+                "automerge": true
             }
         }
     ]
