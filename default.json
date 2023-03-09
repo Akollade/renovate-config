@@ -9,9 +9,15 @@
     "commitMessagePrefix": ":arrow_up:",
     "commitBodyTable": true,
     "prConcurrentLimit": 1,
-    "packageRules": [{
-            "datasources": ["packagist"],
-            "updateTypes": ["patch", "minor"],
+    "packageRules": [
+        {
+            "datasources": [
+                "packagist"
+            ],
+            "updateTypes": [
+                "patch",
+                "minor"
+            ],
             "packageNames": [
                 "drupal/core-dev-pinned",
                 "drupal/core-recommended",
@@ -22,8 +28,12 @@
             "groupName": "Drupal Core"
         },
         {
-            "datasources": ["packagist"],
-            "updateTypes": ["major"],
+            "datasources": [
+                "packagist"
+            ],
+            "updateTypes": [
+                "major"
+            ],
             "packageNames": [
                 "drupal/core-dev-pinned",
                 "drupal/core-recommended",
@@ -34,7 +44,9 @@
             "enabled": false
         },
         {
-            "datasources": ["packagist"],
+            "datasources": [
+                "packagist"
+            ],
             "groupName": "twig packages",
             "groupSlug": "twig",
             "packagePatterns": [
@@ -76,9 +88,9 @@
             ],
             "automerge": true,
             "automergeType": "branch",
-              "schedule": [
+            "schedule": [
                 "every weekend"
-              ]
+            ]
         },
         {
             "packageNames": [
