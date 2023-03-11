@@ -94,10 +94,13 @@
         },
         {
             "packageNames": [
-                "sass/dart-sass"
+                "sass/dart-sass",
+                "core-js",
+                "webpack-notifier"
             ],
             "patch": {
-                "automerge": true
+                "automerge": true,
+                "automergeType": "branch"
             }
         }
     ]
