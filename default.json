@@ -94,7 +94,7 @@
         },
         {
             "packageNames": [
-                "sass/dart-sass",
+                "sass",
                 "core-js",
                 "webpack-notifier"
             ],
