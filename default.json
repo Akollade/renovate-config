@@ -9,7 +9,7 @@
     "commitMessagePrefix": ":arrow_up:",
     "commitBodyTable": true,
     "prConcurrentLimit": 1,
-    "suppressNotifications": ["prIgnoreNotification"],
+    "suppressNotifications": ["prIgnoreNotification", "prEditedNotification"],
     "packageRules": [
         {
             "datasources": [
