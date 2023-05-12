@@ -10,6 +10,7 @@
     "commitBodyTable": true,
     "prConcurrentLimit": 1,
     "suppressNotifications": ["prIgnoreNotification", "prEditedNotification"],
+    "ignorePlugins": false,
     "packageRules": [
         {
             "datasources": [
