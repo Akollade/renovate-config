@@ -108,6 +108,14 @@
             "schedule": [
                 "every weekend"
             ]
+        },
+        {
+            "packageNames": [
+                "drush/drush"
+            ],
+            "minor": {
+                "automerge": true
+            }
         }
     ]
 }
