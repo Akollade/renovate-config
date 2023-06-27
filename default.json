@@ -129,6 +129,14 @@
             "minor": {
                 "automerge": true
             }
-        }
+        },
+        {
+            "packageNames": [
+                "drupal/editor_advanced_link"
+            ],
+            "allowedVersions": '2.2.3',
+            "automerge": true,
+            "automergeType": "branch"
+        },
     ]
 }
