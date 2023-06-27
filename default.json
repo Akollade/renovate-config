@@ -15,13 +15,6 @@
     "packageRules": [
         {
             "matchPackagePatterns": ["^drupal/"],
-            "excludePackageNames": [
-                "drupal/core-dev-pinned",
-                "drupal/core-recommended",
-                "drupal/core-composer-scaffold",
-                "drupal/core-project-message",
-                "drupal/core-vendor-hardening"
-            ],
             "minimumReleaseAge": 2,
             "internalChecksFilter": "strict"
         },
