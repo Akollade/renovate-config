@@ -107,6 +107,18 @@
                 "every weekend"
             ]
         },
+                {
+            "groupName": "phpunit packages",
+            "groupSlug": "phpunit",
+            "packagePatterns": [
+                "^phpunit/",
+            ],
+            "automerge": true,
+            "automergeType": "branch",
+            "schedule": [
+                "every weekend"
+            ]
+        },
         {
             "packageNames": [
                 "sass",
