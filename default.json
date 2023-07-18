@@ -147,7 +147,7 @@
                 "drupal/coder"
             ],
             "minor": {
-                "automerge": true
+                "automerge": true,
                 "automergeType": "branch"
             },
             "patch": {
