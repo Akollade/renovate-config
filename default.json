@@ -143,10 +143,16 @@
         },
         {
             "packageNames": [
-                "drush/drush"
+                "drush/drush",
+                "drupal/coder"
             ],
             "minor": {
                 "automerge": true
+                "automergeType": "branch"
+            },
+            "patch": {
+                "automerge": true,
+                "automergeType": "branch"
             }
         }
     ]
