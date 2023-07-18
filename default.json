@@ -130,7 +130,8 @@
                 "sass",
                 "sass/dart-sass",
                 "core-js",
-                "webpack-notifier"
+                "webpack-notifier",
+                "webpack"
             ],
             "patch": {
                 "automerge": true,
