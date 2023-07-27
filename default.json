@@ -154,6 +154,15 @@
                 "automerge": true,
                 "automergeType": "branch"
             }
+        },
+        {
+            "packageNames": [
+                "drupal/minifyhtml",
+                "drupal/symfony_mailer"
+            ],
+            "patch": {
+                "automerge": true
+            }
         }
     ]
 }
