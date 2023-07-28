@@ -144,7 +144,8 @@
         {
             "packageNames": [
                 "drush/drush",
-                "drupal/coder"
+                "drupal/coder",
+                "vincentlanglet/twig-cs-fixer"
             ],
             "minor": {
                 "automerge": true,
