@@ -158,7 +158,8 @@
         {
             "packageNames": [
                 "drupal/minifyhtml",
-                "drupal/symfony_mailer"
+                "drupal/symfony_mailer",
+                "drupal/dotenv"
             ],
             "patch": {
                 "automerge": true
