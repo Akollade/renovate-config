@@ -14,12 +14,6 @@
     "platformAutomerge": true,
     "packageRules": [
         {
-            "datasources": [
-                "npm"
-            ],
-            "addLabels": ["renovate-datasource-npm"]
-        },
-        {
             "matchPackagePrefixes": ["drupal"],
             "excludePackageNames": [
                 "drupal/core-dev-pinned",
