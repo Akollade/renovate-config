@@ -83,36 +83,9 @@
             ]
         },
         {
-            "packageNames": [
-                "pre-commit",
-                "pre-commit/pre-commit-hooks",
-                "adrienverge/yamllint"
-            ],
-            "minor": {
-                "automerge": true,
-                "automergeType": "branch"
-            }
-        },
-        {
-            "groupName": "phpstan packages",
-            "groupSlug": "phpstan",
-            "packagePatterns": [
-                "^phpstan/",
-                "jangregor/phpstan-prophecy",
-                "mglaman/phpstan-drupal"
-            ],
-            "automerge": true,
-            "automergeType": "branch",
-            "schedule": [
-                "every weekend"
-            ]
-        },
-                {
-            "groupName": "phpunit packages",
-            "groupSlug": "phpunit",
-            "packagePatterns": [
-                "^phpunit/",
-            ],
+            "datasources": ["npm"],
+            "matchDepTypes": ["devDependencies"],
+            "matchUpdateTypes": ["patch"],
             "automerge": true,
             "automergeType": "branch",
             "schedule": [
@@ -120,35 +93,14 @@
             ]
         },
         {
-            "packageNames": [
-                "sass",
-                "sass/dart-sass",
-                "core-js",
-                "webpack-notifier",
-                "webpack"
-            ],
-            "patch": {
-                "automerge": true,
-                "automergeType": "branch"
-            },
+            "datasources": ["packagist"],
+            "matchDepTypes": ["devDependencies"],
+            "matchUpdateTypes": ["minor", "patch"],
+            "automerge": true,
+            "automergeType": "branch",
             "schedule": [
                 "every weekend"
             ]
-        },
-        {
-            "packageNames": [
-                "drush/drush",
-                "drupal/coder",
-                "vincentlanglet/twig-cs-fixer"
-            ],
-            "minor": {
-                "automerge": true,
-                "automergeType": "branch"
-            },
-            "patch": {
-                "automerge": true,
-                "automergeType": "branch"
-            }
         },
         {
             "packageNames": [
