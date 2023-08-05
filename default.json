@@ -94,7 +94,7 @@
         },
         {
             "datasources": ["packagist"],
-            "matchDepTypes": ["devDependencies"],
+            "matchDepTypes": ["require-dev"],
             "matchUpdateTypes": ["minor", "patch"],
             "automerge": true,
             "automergeType": "branch",
