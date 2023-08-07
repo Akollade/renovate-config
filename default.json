@@ -4,7 +4,8 @@
         "config:base",
         ":separatePatchReleases",
         ":label(renovate)",
-        "helpers:pinGitHubActionDigests"
+        "helpers:pinGitHubActionDigests",
+        "github>akollade/renovate-config:drupal-project"
     ],
     "timezone": "Europe/Paris",
     "rangeStrategy": "update-lockfile",
@@ -15,51 +16,6 @@
     "ignorePlugins": false,
     "platformAutomerge": true,
     "packageRules": [
-        {
-            "matchPackagePrefixes": ["drupal"],
-            "excludePackageNames": [
-                "drupal/core-dev-pinned",
-                "drupal/core-recommended",
-                "drupal/core-composer-scaffold",
-                "drupal/core-project-message",
-                "drupal/core-vendor-hardening"
-            ],
-            "minimumReleaseAge": 2,
-            "internalChecksFilter": "strict"
-        },
-        {
-            "datasources": [
-                "packagist"
-            ],
-            "updateTypes": [
-                "patch",
-                "minor"
-            ],
-            "packageNames": [
-                "drupal/core-dev-pinned",
-                "drupal/core-recommended",
-                "drupal/core-composer-scaffold",
-                "drupal/core-project-message",
-                "drupal/core-vendor-hardening"
-            ],
-            "groupName": "Drupal Core"
-        },
-        {
-            "datasources": [
-                "packagist"
-            ],
-            "updateTypes": [
-                "major"
-            ],
-            "packageNames": [
-                "drupal/core-dev-pinned",
-                "drupal/core-recommended",
-                "drupal/core-composer-scaffold",
-                "drupal/core-project-message",
-                "drupal/core-vendor-hardening"
-            ],
-            "enabled": false
-        },
         {
             "datasources": ["npm"],
             "matchDepTypes": ["devDependencies"],
@@ -79,16 +35,6 @@
             "schedule": [
                 "every weekend"
             ]
-        },
-        {
-            "packageNames": [
-                "drupal/minifyhtml",
-                "drupal/symfony_mailer",
-                "drupal/dotenv"
-            ],
-            "patch": {
-                "automerge": true
-            }
         }
     ]
 }
