@@ -3,7 +3,8 @@
     "extends": [
         "config:base",
         ":separatePatchReleases",
-        ":label(renovate)"
+        ":label(renovate)",
+        "helpers:pinGitHubActionDigests"
     ],
     "timezone": "Europe/Paris",
     "rangeStrategy": "update-lockfile",
@@ -58,30 +59,6 @@
                 "drupal/core-vendor-hardening"
             ],
             "enabled": false
-        },
-        {
-            "datasources": [
-                "packagist"
-            ],
-            "groupName": "twig packages",
-            "groupSlug": "twig",
-            "packagePatterns": [
-                "^twig/"
-            ]
-        },
-        {
-            "groupName": "eslint",
-            "packagePatterns": [
-                "eslint"
-            ]
-        },
-        {
-            "groupName": "bazinga-js-translator packages",
-            "groupSlug": "bazinga-js-translator",
-            "packageNames": [
-                "willdurand/js-translation-bundle",
-                "bazinga-translator"
-            ]
         },
         {
             "datasources": ["npm"],
