@@ -6,7 +6,8 @@
         ":label(renovate)",
         "helpers:pinGitHubActionDigests",
         ":enableVulnerabilityAlertsWithLabel(security)",
-        "github>akollade/renovate-config:drupal-project"
+        "github>akollade/renovate-config:drupal-project",
+        "github>akollade/renovate-config:drupal-modules-releases-to-automerge"
     ],
     "timezone": "Europe/Paris",
     "rangeStrategy": "update-lockfile",
