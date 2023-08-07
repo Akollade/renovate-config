@@ -11,7 +11,8 @@
                 "drupal/core-vendor-hardening"
             ],
             "minimumReleaseAge": 2,
-            "internalChecksFilter": "strict"
+            "internalChecksFilter": "strict",
+            "draftPR": true
         },
         {
             "datasources": [
