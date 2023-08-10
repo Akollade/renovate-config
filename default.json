@@ -21,7 +21,7 @@
         {
             "datasources": ["npm"],
             "matchDepTypes": ["devDependencies"],
-            "matchUpdateTypes": ["patch"],
+            "matchUpdateTypes": ["minor", "patch"],
             "automerge": true,
             "automergeType": "branch",
             "schedule": [
