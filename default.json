@@ -23,7 +23,6 @@
             "matchDepTypes": ["devDependencies"],
             "matchUpdateTypes": ["minor", "patch"],
             "automerge": true,
-            "automergeType": "branch",
             "schedule": [
                 "every weekend"
             ]
