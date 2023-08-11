@@ -55,13 +55,6 @@
             "patch": {
                 "automerge": true
             }
-        },
-        {
-            "matchPackageNames": [
-              "drupal/xmlsitemap"
-            ],
-            "allowedVersions": "1.5.0",
-            "automerge": true
-        }      
+        } 
     ]
 }
