@@ -9,6 +9,9 @@
         "github>akollade/renovate-config:drupal-project"
     ],
     "timezone": "Europe/Paris",
+    "schedule": [
+        "every weekend"
+    ],
     "rangeStrategy": "update-lockfile",
     "commitMessagePrefix": ":arrow_up:",
     "commitBodyTable": true,
@@ -21,20 +24,62 @@
             "datasources": ["npm"],
             "matchDepTypes": ["devDependencies"],
             "matchUpdateTypes": ["minor", "patch"],
-            "automerge": true,
-            "schedule": [
-                "every weekend"
-            ]
+            "automerge": true
         },
         {
             "datasources": ["packagist"],
             "matchDepTypes": ["require-dev"],
             "matchUpdateTypes": ["minor", "patch"],
             "automerge": true,
-            "automergeType": "branch",
-            "schedule": [
-                "every weekend"
-            ]
+            "automergeType": "branch"
+        },
+        {
+            "matchPackagePrefixes": ["drupal/"],
+            "excludePackageNames": [
+                "drupal/core-dev-pinned",
+                "drupal/core-recommended",
+                "drupal/core-composer-scaffold",
+                "drupal/core-project-message",
+                "drupal/core-vendor-hardening"
+            ],
+            "updateTypes": [
+                "patch",
+                "minor"
+            ],
+            "groupName": "Drupal modules"
+        },
+        {
+            "datasources": [
+                "packagist"
+            ],
+            "updateTypes": [
+                "patch",
+                "minor"
+            ],
+            "packageNames": [
+                "drupal/core-dev-pinned",
+                "drupal/core-recommended",
+                "drupal/core-composer-scaffold",
+                "drupal/core-project-message",
+                "drupal/core-vendor-hardening"
+            ],
+            "groupName": "Drupal Core"
+        },
+        {
+            "datasources": [
+                "packagist"
+            ],
+            "updateTypes": [
+                "major"
+            ],
+            "packageNames": [
+                "drupal/core-dev-pinned",
+                "drupal/core-recommended",
+                "drupal/core-composer-scaffold",
+                "drupal/core-project-message",
+                "drupal/core-vendor-hardening"
+            ],
+            "enabled": false
         }
     ]
 }
