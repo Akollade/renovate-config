@@ -5,8 +5,7 @@
         ":separatePatchReleases",
         ":label(renovate)",
         "helpers:pinGitHubActionDigests",
-        ":enableVulnerabilityAlertsWithLabel(security)",
-        "github>akollade/renovate-config:drupal-project"
+        ":enableVulnerabilityAlertsWithLabel(security)"
     ],
     "timezone": "Europe/Paris",
     "schedule": [
