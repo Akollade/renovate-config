@@ -2,7 +2,7 @@
     "$schema": "https://docs.renovatebot.com/renovate-schema.json",
     "packageRules": [
         {
-            "matchPackagePrefixes": ["drupal"],
+            "matchPackagePrefixes": ["drupal/"],
             "excludePackageNames": [
                 "drupal/core-dev-pinned",
                 "drupal/core-recommended",
@@ -10,8 +10,11 @@
                 "drupal/core-project-message",
                 "drupal/core-vendor-hardening"
             ],
-            "minimumReleaseAge": 2,
-            "internalChecksFilter": "strict"
+            "updateTypes": [
+                "patch",
+                "minor"
+            ],
+            "groupName": "Drupal modules"
         },
         {
             "datasources": [
