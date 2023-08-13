@@ -36,7 +36,7 @@
             "packageNames": ["drush/drush"],
             "matchUpdateTypes": ["minor", "patch"],
             "automerge": true,
-            "automergeType": "branch"
+            "automergeType": "branch",
             "groupName": "Drush"
         },
         {
