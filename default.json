@@ -33,6 +33,13 @@
             "automergeType": "branch"
         },
         {
+            "packageNames": ["drush/drush"],
+            "matchUpdateTypes": ["minor", "patch"],
+            "automerge": true,
+            "automergeType": "branch"
+            "groupName": "Drush"
+        },
+        {
             "matchPackagePrefixes": ["drupal/"],
             "excludePackageNames": [
                 "drupal/core-dev-pinned",
