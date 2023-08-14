@@ -23,21 +23,24 @@
             "datasources": ["npm"],
             "matchDepTypes": ["devDependencies"],
             "matchUpdateTypes": ["minor", "patch"],
-            "automerge": true
+            "automerge": true,
+            "prPriority": 10
         },
         {
             "datasources": ["packagist"],
             "matchDepTypes": ["require-dev"],
             "matchUpdateTypes": ["minor", "patch"],
             "automerge": true,
-            "automergeType": "branch"
+            "automergeType": "branch",
+            "prPriority": 10
         },
         {
             "packageNames": ["drush/drush"],
             "matchUpdateTypes": ["minor", "patch"],
             "automerge": true,
             "automergeType": "branch",
-            "groupName": "Drush"
+            "groupName": "Drush",
+            "prPriority": 10
         },
         {
             "matchPackagePrefixes": ["drupal/"],
