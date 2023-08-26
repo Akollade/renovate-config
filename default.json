@@ -21,7 +21,7 @@
     "packageRules": [
         {
             "packageNames": ["actions/checkout"],
-            "matchUpdateTypes": ["minor", "patch"],
+            "matchUpdateTypes": ["minor", "patch", "digest"],
             "automerge": true,
             "automergeType": "branch",
             "prPriority": 10
