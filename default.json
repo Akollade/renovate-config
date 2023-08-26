@@ -20,6 +20,13 @@
     "platformAutomerge": true,
     "packageRules": [
         {
+            "packageNames": ["actions/checkout"],
+            "matchUpdateTypes": ["minor", "patch"],
+            "automerge": true,
+            "automergeType": "branch",
+            "prPriority": 10
+        },
+        {
             "datasources": ["npm"],
             "matchDepTypes": ["devDependencies"],
             "matchUpdateTypes": ["minor", "patch"],
