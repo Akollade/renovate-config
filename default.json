@@ -20,7 +20,7 @@
     "platformAutomerge": true,
     "packageRules": [
         {
-            "packageNames": ["actions/checkout"],
+            "packageNames": ["actions/checkout", "actions/cache"],
             "matchUpdateTypes": ["minor", "patch", "digest"],
             "automerge": true,
             "automergeType": "branch",
