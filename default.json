@@ -9,7 +9,7 @@
     ],
     "timezone": "Europe/Paris",
     "schedule": [
-        "every weekend"
+        "before 8am on monday, wednesday and friday"
     ],
     "rangeStrategy": "update-lockfile",
     "commitMessagePrefix": ":arrow_up:",
@@ -20,6 +20,11 @@
     "platformAutomerge": true,
     "packageRules": [
         {
+            "matchManagers": ["github-actions"],
+            "prPriority": -10
+        }
+        {
+            "matchManagers": ["github-actions"],
             "packageNames": ["actions/checkout", "actions/cache"],
             "matchUpdateTypes": ["minor", "patch", "digest"],
             "automerge": true,
