@@ -22,7 +22,7 @@
         {
             "matchManagers": ["github-actions"],
             "prPriority": -10
-        }
+        },
         {
             "matchManagers": ["github-actions"],
             "packageNames": ["actions/checkout", "actions/cache"],
