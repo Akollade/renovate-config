@@ -18,6 +18,7 @@
     "suppressNotifications": ["prIgnoreNotification", "prEditedNotification"],
     "ignorePlugins": false,
     "platformAutomerge": true,
+    "dependencyDashboardLabels": ["renovate"],
     "packageRules": [
         {
             "matchManagers": ["github-actions"],
