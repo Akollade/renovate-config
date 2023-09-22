@@ -23,7 +23,10 @@
         {
             "matchManagers": ["github-actions"],
             "prPriority": -10,
-            "schedule": ["before 8am on the first day of the month and the 15th day of the month"]
+            "schedule": [
+                "before 8am on the first day of the month",
+                "before 8am on the 15th day of the month"
+            ]
         },
         {
             "matchManagers": ["github-actions"],
