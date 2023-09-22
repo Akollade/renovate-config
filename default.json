@@ -9,7 +9,7 @@
     ],
     "timezone": "Europe/Paris",
     "schedule": [
-        "before 8am on monday, wednesday and friday"
+        "before 8am on monday and friday"
     ],
     "rangeStrategy": "update-lockfile",
     "commitMessagePrefix": ":arrow_up:",
