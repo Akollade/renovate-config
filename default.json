@@ -34,7 +34,6 @@
             "packageNames": ["actions/checkout", "actions/cache"],
             "matchUpdateTypes": ["minor", "patch", "digest"],
             "automerge": true,
-            "automergeType": "branch",
             "prPriority": 10
         },
         {
@@ -55,7 +54,6 @@
             "packageNames": ["drush/drush"],
             "matchUpdateTypes": ["minor", "patch"],
             "automerge": true,
-            "automergeType": "branch",
             "groupName": "Drush",
             "prPriority": 10
         },
