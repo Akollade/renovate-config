@@ -49,7 +49,6 @@
             "matchDepTypes": ["require-dev"],
             "matchUpdateTypes": ["minor", "patch"],
             "automerge": true,
-            "automergeType": "branch",
             "prPriority": 10
         },
         {
