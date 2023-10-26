@@ -9,7 +9,7 @@
     ],
     "timezone": "Europe/Paris",
     "schedule": [
-        "before 8am on monday and friday"
+        "before 8am every weekday"
     ],
     "updateNotScheduled": false,
     "rangeStrategy": "update-lockfile",
@@ -25,8 +25,7 @@
             "matchManagers": ["github-actions"],
             "prPriority": -10,
             "schedule": [
-                "before 8am on the first day of the month",
-                "before 8am on the 15th day of the month"
+                "before 8am on monday and friday"
             ]
         },
         {
