@@ -26,14 +26,16 @@
             "prPriority": -10,
             "schedule": [
                 "before 8am on monday and friday"
-            ]
+            ],
+            "groupName": "Github Actions"
         },
         {
             "matchManagers": ["github-actions"],
             "packageNames": ["actions/checkout", "actions/cache"],
             "matchUpdateTypes": ["minor", "patch", "digest"],
             "automerge": true,
-            "prPriority": 10
+            "prPriority": 10,
+            "groupName": "Github Actions Automerge"
         },
         {
             "datasources": ["npm"],
