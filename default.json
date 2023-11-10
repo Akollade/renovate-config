@@ -23,7 +23,7 @@
     "packageRules": [
         {
             "matchManagers": ["github-actions"],
-            "excludePackageNames": [
+            "packageNames": [
                 "mariadb"
             ],
             "enabled": false
