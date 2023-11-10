@@ -23,6 +23,13 @@
     "packageRules": [
         {
             "matchManagers": ["github-actions"],
+            "excludePackageNames": [
+                "mariadb"
+            ],
+            "enabled": false
+        },
+        {
+            "matchManagers": ["github-actions"],
             "prPriority": -10,
             "schedule": [
                 "before 8am on monday and friday"
