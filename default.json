@@ -64,12 +64,20 @@
             "prPriority": 10
         },
         {
-            "matchPackagePrefixes": ["drupal/"],
+            "matchPackagePatterns": ["^drupal/"],
             "excludePackagePatterns": ["^drupal/core"],
             "updateTypes": [
                 "patch",
                 "minor"
             ],
+            "groupName": "Drupal modules"
+        },
+        {
+            "packageNames": [
+                "drupal/webform"
+            ],
+            "updateTypes": ["patch"],
+            "automerge": true,
             "groupName": "Drupal modules"
         },
         {
