@@ -85,15 +85,29 @@
                 "packagist"
             ],
             "updateTypes": [
-                "patch",
+                "patch"
+            ],
+            "packageNames": [
+                "drupal/core-dev-pinned",
+                "drupal/core-recommended",
+                "drupal/core-composer-scaffold",
+                "drupal/core-project-message"
+            ],
+            "groupName": "Drupal Core",
+            "automerge": true
+        },
+        {
+            "datasources": [
+                "packagist"
+            ],
+            "updateTypes": [
                 "minor"
             ],
             "packageNames": [
                 "drupal/core-dev-pinned",
                 "drupal/core-recommended",
                 "drupal/core-composer-scaffold",
-                "drupal/core-project-message",
-                "drupal/core-vendor-hardening"
+                "drupal/core-project-message"
             ],
             "groupName": "Drupal Core"
         },
@@ -108,8 +122,7 @@
                 "drupal/core-dev-pinned",
                 "drupal/core-recommended",
                 "drupal/core-composer-scaffold",
-                "drupal/core-project-message",
-                "drupal/core-vendor-hardening"
+                "drupal/core-project-message"
             ],
             "enabled": false
         }
