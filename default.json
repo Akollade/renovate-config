@@ -31,9 +31,7 @@
         {
             "matchManagers": ["github-actions"],
             "prPriority": -10,
-            "schedule": [
-                "before 8am on monday and friday"
-            ],
+            "schedule": ["before 8am on monday and friday"],
             "groupName": "Github Actions"
         },
         {
@@ -67,13 +65,7 @@
         },
         {
             "matchPackagePrefixes": ["drupal/"],
-            "excludePackageNames": [
-                "drupal/core-dev-pinned",
-                "drupal/core-recommended",
-                "drupal/core-composer-scaffold",
-                "drupal/core-project-message",
-                "drupal/core-vendor-hardening"
-            ],
+            "excludePackagePatterns": ["^drupal/core"],
             "updateTypes": [
                 "patch",
                 "minor"
@@ -81,49 +73,22 @@
             "groupName": "Drupal modules"
         },
         {
-            "datasources": [
-                "packagist"
-            ],
-            "updateTypes": [
-                "patch"
-            ],
-            "packageNames": [
-                "drupal/core-dev-pinned",
-                "drupal/core-recommended",
-                "drupal/core-composer-scaffold",
-                "drupal/core-project-message"
-            ],
+            "datasources": ["packagist"],
+            "updateTypes": ["patch"],
+            "matchPackagePatterns": ["^drupal/core"],
             "groupName": "Drupal Core",
             "automerge": true
         },
         {
-            "datasources": [
-                "packagist"
-            ],
-            "updateTypes": [
-                "minor"
-            ],
-            "packageNames": [
-                "drupal/core-dev-pinned",
-                "drupal/core-recommended",
-                "drupal/core-composer-scaffold",
-                "drupal/core-project-message"
-            ],
+            "datasources": ["packagist"],
+            "updateTypes": ["minor"],
+            "matchPackagePatterns": ["^drupal/core"],
             "groupName": "Drupal Core"
         },
         {
-            "datasources": [
-                "packagist"
-            ],
-            "updateTypes": [
-                "major"
-            ],
-            "packageNames": [
-                "drupal/core-dev-pinned",
-                "drupal/core-recommended",
-                "drupal/core-composer-scaffold",
-                "drupal/core-project-message"
-            ],
+            "datasources": ["packagist"],
+            "updateTypes": ["major"],
+            "matchPackagePatterns": ["^drupal/core"],
             "enabled": false
         }
     ]
