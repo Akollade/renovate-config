@@ -74,7 +74,8 @@
         },
         {
             "packageNames": [
-                "drupal/webform"
+                "drupal/webform",
+                "drupal/simple_sitemap"
             ],
             "updateTypes": ["patch"],
             "automerge": true,
