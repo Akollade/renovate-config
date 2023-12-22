@@ -36,7 +36,12 @@
         },
         {
             "matchManagers": ["github-actions"],
-            "packageNames": ["actions/checkout", "actions/cache", "tj-actions/changed-files"],
+            "packageNames": [
+                "actions/checkout",
+                "actions/cache",
+                "actions/setup-node",
+                "tj-actions/changed-files"
+            ],
             "matchUpdateTypes": ["minor", "patch", "digest"],
             "automerge": true,
             "prPriority": 10,
