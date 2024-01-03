@@ -69,8 +69,19 @@
             "prPriority": 10
         },
         {
+            "matchPackagePatterns": ["^drupal/commerce"],
+            "updateTypes": [
+                "patch",
+                "minor"
+            ],
+            "groupName": "Drupal Commerce modules"
+        },
+        {
             "matchPackagePatterns": ["^drupal/"],
-            "excludePackagePatterns": ["^drupal/core"],
+            "excludePackagePatterns": [
+                "^drupal/core",
+                "^drupal/commerce"
+            ],
             "updateTypes": [
                 "patch",
                 "minor"
