@@ -72,7 +72,7 @@
             "/larastan"
           ],
           "schedule": [
-            "before 8am on manday and friday"
+            "before 8am on monday and friday"
           ]
         },
         {
