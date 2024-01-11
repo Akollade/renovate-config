@@ -62,6 +62,20 @@
             "prPriority": 10
         },
         {
+          "groupName": "PHPStan packages",
+          "matchDatasources": [
+            "packagist"
+          ],
+          "matchPackagePatterns": [
+            "^phpstan/phpstan$",
+            "/phpstan-",
+            "/larastan"
+          ],
+          "schedule": [
+            "before 8am on manday and friday"
+          ]
+        },
+        {
             "packageNames": ["drush/drush"],
             "matchUpdateTypes": ["minor", "patch"],
             "automerge": true,
