@@ -129,6 +129,13 @@
             "updateTypes": ["major"],
             "matchPackagePatterns": ["^drupal/core"],
             "enabled": false
+        },
+        {
+          "groupName": "twig packages",
+          "groupSlug": "twig",
+          "matchPackagePrefixes": [
+            "twig/"
+          ]
         }
     ]
 }
