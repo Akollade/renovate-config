@@ -142,6 +142,6 @@
             "updateTypes": ["major"],
             "matchPackagePrefixes": ["symfony/"],
             "enabled": false
-        },
+        }
     ]
 }
