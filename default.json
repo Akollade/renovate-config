@@ -136,6 +136,12 @@
           "matchPackagePrefixes": [
             "twig/"
           ]
-        }
+        },
+        {
+            "datasources": ["packagist"],
+            "updateTypes": ["major"],
+            "matchPackagePrefixes": ["symfony/"]
+            "enabled": false
+        },
     ]
 }
