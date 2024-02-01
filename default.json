@@ -140,7 +140,7 @@
         {
             "datasources": ["packagist"],
             "updateTypes": ["major"],
-            "matchPackagePrefixes": ["symfony/"]
+            "matchPackagePrefixes": ["symfony/"],
             "enabled": false
         },
     ]
