@@ -69,7 +69,8 @@
           "matchPackagePatterns": [
             "^phpstan/phpstan$",
             "/phpstan-",
-            "/larastan"
+            "/larastan",
+            "spaze/phpstan-disallowed-calls"
           ],
           "schedule": [
             "before 8am on monday and friday"
