@@ -1,0 +1,31 @@
+{
+    "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+    "packageRules": [
+        {
+            "matchManagers": ["github-actions"],
+            "packageNames": [
+                "mariadb"
+            ],
+            "enabled": false
+        },
+        {
+            "matchManagers": ["github-actions"],
+            "prPriority": -10,
+            "schedule": ["before 8am on monday and friday"],
+            "groupName": "Github Actions"
+        },
+        {
+            "matchManagers": ["github-actions"],
+            "packageNames": [
+                "actions/checkout",
+                "actions/cache",
+                "actions/setup-node",
+                "tj-actions/changed-files"
+            ],
+            "matchUpdateTypes": ["minor", "patch", "digest"],
+            "automerge": true,
+            "prPriority": 10,
+            "groupName": "Github Actions Automerge"
+        }
+    ]
+}

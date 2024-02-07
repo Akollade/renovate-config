@@ -1,0 +1,60 @@
+{
+    "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+    "packageRules": [
+        {
+            "packageNames": ["drush/drush"],
+            "matchUpdateTypes": ["minor", "patch"],
+            "automerge": true,
+            "groupName": "Drush",
+            "prPriority": 10
+        },
+        {
+            "matchPackagePatterns": ["^drupal/commerce"],
+            "updateTypes": [
+                "patch",
+                "minor"
+            ],
+            "groupName": "Drupal Commerce modules"
+        },
+        {
+            "matchPackagePatterns": ["^drupal/"],
+            "excludePackagePatterns": [
+                "^drupal/core",
+                "^drupal/commerce"
+            ],
+            "updateTypes": [
+                "patch",
+                "minor"
+            ],
+            "groupName": "Drupal modules"
+        },
+        {
+            "packageNames": [
+                "drupal/webform",
+                "drupal/simple_sitemap"
+            ],
+            "updateTypes": ["patch"],
+            "automerge": true,
+            "groupName": "Drupal modules"
+        },
+        {
+            "datasources": ["packagist"],
+            "updateTypes": ["patch"],
+            "matchPackagePatterns": ["^drupal/core"],
+            "groupName": "Drupal Core",
+            "automerge": true
+        },
+        {
+            "datasources": ["packagist"],
+            "updateTypes": ["minor"],
+            "matchPackagePatterns": ["^drupal/core"],
+            "groupName": "Drupal Core"
+        },
+        {
+            "datasources": ["packagist"],
+            "updateTypes": ["major"],
+            "matchPackagePatterns": ["^drupal/core"],
+            "enabled": false
+        }
+    ]
+}
