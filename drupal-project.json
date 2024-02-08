@@ -4,6 +4,10 @@
         "github>akollade/renovate-config:_base",
         ":separatePatchReleases"
     ],
+    "ignorePaths": [
+        "web/libraries/**",
+        "libraries/**"
+    ],
     "packageRules": [
         {
             "packageNames": ["drush/drush"],
