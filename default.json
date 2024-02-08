@@ -26,6 +26,12 @@
     "dependencyDashboardLabels": ["renovate"],
     "packageRules": [
         {
+            "matchPackageNames": [
+            "php"
+            ],
+            "enabled": false
+        },
+        {
             "datasources": ["npm"],
             "matchDepTypes": ["devDependencies"],
             "matchUpdateTypes": ["minor", "patch"],
