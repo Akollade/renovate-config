@@ -31,10 +31,6 @@
         },
         {
             "datasources": ["npm"],
-            "separateMinorPatch": false
-        },
-        {
-            "datasources": ["npm"],
             "matchDepTypes": ["devDependencies"],
             "matchUpdateTypes": ["minor", "patch"],
             "automerge": true,
