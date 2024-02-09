@@ -2,28 +2,9 @@
     "$schema": "https://docs.renovatebot.com/renovate-schema.json",
     "extends": [
         "github>akollade/renovate-config:default",
-        ":separatePatchReleases"
-    ],
-    "ignorePaths": [
-        "web/libraries/**",
-        "libraries/**"
+        "github>akollade/renovate-config:_drupal"
     ],
     "packageRules": [
-        {
-            "packageNames": ["drush/drush"],
-            "matchUpdateTypes": ["minor", "patch"],
-            "automerge": true,
-            "groupName": "Drush",
-            "prPriority": 10
-        },
-        {
-            "matchPackagePatterns": ["^drupal/commerce"],
-            "updateTypes": [
-                "patch",
-                "minor"
-            ],
-            "groupName": "Drupal Commerce modules"
-        },
         {
             "matchPackagePatterns": ["^drupal/"],
             "excludePackagePatterns": [
@@ -35,31 +16,6 @@
                 "minor"
             ],
             "groupName": "Drupal modules"
-        },
-        {
-            "packageNames": [
-                "drupal/webform",
-                "drupal/simple_sitemap"
-            ],
-            "updateTypes": ["patch"],
-            "automerge": true,
-            "groupName": "Drupal modules"
-        },
-        {
-            "updateTypes": ["patch"],
-            "matchPackagePatterns": ["^drupal/core"],
-            "groupName": "Drupal Core",
-            "automerge": true
-        },
-        {
-            "updateTypes": ["minor"],
-            "matchPackagePatterns": ["^drupal/core"],
-            "groupName": "Drupal Core"
-        },
-        {
-            "updateTypes": ["major"],
-            "matchPackagePatterns": ["^drupal/core"],
-            "enabled": false
         }
     ]
 }
