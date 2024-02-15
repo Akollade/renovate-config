@@ -34,7 +34,7 @@
         {
             "updateTypes": ["major"],
             "matchPackagePatterns": ["^drupal/core"],
-            "enabled": false
+            "dependencyDashboardApproval": true
         }
     ]
 }

@@ -6,7 +6,7 @@
         "docker:pinDigests",
         "helpers:pinGitHubActionDigests",
         ":ignoreModulesAndTests",
-        ":separateMajorReleases",
+        ":separateMultipleMajorReleases",
         ":label(renovate)",
         ":enableVulnerabilityAlertsWithLabel(security)",
         "github>akollade/renovate-config:_github-actions"
@@ -71,7 +71,7 @@
             "datasources": ["packagist"],
             "updateTypes": ["major"],
             "matchPackagePrefixes": ["symfony/"],
-            "enabled": false
+            "dependencyDashboardApproval": true
         }
     ]
 }
