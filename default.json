@@ -34,14 +34,14 @@
         {
             "datasources": ["npm"],
             "matchDepTypes": ["devDependencies"],
-            "matchUpdateTypes": ["minor", "patch"],
+            "matchUpdateTypes": ["minor", "patch", "pin", "digest"],
             "automerge": true,
             "prPriority": 10
         },
         {
             "datasources": ["packagist"],
             "matchDepTypes": ["require-dev"],
-            "matchUpdateTypes": ["minor", "patch"],
+            "matchUpdateTypes": ["minor", "patch", "pin", "digest"],
             "automerge": true,
             "prPriority": 10
         },
