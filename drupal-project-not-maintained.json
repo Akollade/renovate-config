@@ -1,7 +1,6 @@
 {
     "$schema": "https://docs.renovatebot.com/renovate-schema.json",
     "extends": [
-        "github>akollade/renovate-config:default",
-        "github>akollade/renovate-config:_drupal"
+        "github>akollade/renovate-config:drupal-project"
     ]
 }
