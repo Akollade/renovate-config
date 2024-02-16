@@ -34,31 +34,29 @@
         {
             "datasources": ["npm"],
             "matchDepTypes": ["devDependencies"],
+            "schedule": [
+              "before 8am on the first week of the month"
+            ]
+        },
+        {
+            "datasources": ["npm"],
+            "matchDepTypes": ["devDependencies"],
             "matchUpdateTypes": ["minor", "patch", "pin", "digest"],
             "automerge": true,
-            "prPriority": 10
+            "prPriority": 10,
+            "schedule": [
+              "before 8am on the last week of the month"
+            ]
         },
         {
             "datasources": ["packagist"],
             "matchDepTypes": ["require-dev"],
             "matchUpdateTypes": ["minor", "patch", "pin", "digest"],
             "automerge": true,
-            "prPriority": 10
-        },
-        {
-          "groupName": "PHPStan packages",
-          "matchDatasources": [
-            "packagist"
-          ],
-          "matchPackagePatterns": [
-            "^phpstan/phpstan$",
-            "/phpstan-",
-            "/larastan",
-            "spaze/phpstan-disallowed-calls"
-          ],
-          "schedule": [
-            "before 8am on monday and friday"
-          ]
+            "prPriority": 10,
+            "schedule": [
+                "before 8am on the last week of the month"
+            ]
         },
         {
           "groupName": "twig packages",

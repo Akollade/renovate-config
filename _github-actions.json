@@ -12,7 +12,9 @@
             "groupName": "GitHub Actions",
             "matchManagers": ["github-actions"],
             "prPriority": -10,
-            "schedule": ["before 8am on monday and friday"],
+            "schedule": [
+                "before 8am on the last week of the month"
+            ],
             "automerge": true
         }
     ]
