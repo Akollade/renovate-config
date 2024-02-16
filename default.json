@@ -33,7 +33,7 @@
         },
         {
             "datasources": ["npm"],
-            "matchDepTypes": ["devDependencies"],
+            "matchDepTypes": ["dependencies"],
             "schedule": [
               "before 8am on the first week of the month"
             ]
