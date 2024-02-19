@@ -59,6 +59,12 @@
             ]
         },
         {
+            "datasources": ["docker"],
+            "schedule": [
+                "before 8am on the last week of the month"
+            ]
+        },
+        {
           "groupName": "twig packages",
           "groupSlug": "twig",
           "matchPackagePrefixes": [
