@@ -21,21 +21,14 @@
             "groupName": "Drupal Commerce modules"
         },
         {
-            "updateTypes": ["patch"],
             "matchPackagePatterns": ["^drupal/core"],
             "groupName": "Drupal Core",
-            "automerge": true
-        },
-        {
-            "updateTypes": ["minor"],
-            "matchPackagePatterns": ["^drupal/core"],
-            "groupName": "Drupal Core"
-        },
-        {
-            "updateTypes": ["major"],
-            "matchPackagePatterns": ["^drupal/core"],
-            "groupName": "Drupal Core",
-            "dependencyDashboardApproval": true
+            "patch": {
+                "automerge": true
+            },
+            "major": {
+                 "dependencyDashboardApproval": true
+            }
         }
     ]
 }
