@@ -1,2 +1,3 @@
 # renovate-config
-Renovate config presets used at Akollade 
+
+Renovate config presets used at Akollade

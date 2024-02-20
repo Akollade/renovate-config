@@ -10,10 +10,11 @@
     ],
     "packageRules": [
         {
+            "groupName": "Drush",
+            "description": "Automerge drush patch and minor updates",
             "packageNames": ["drush/drush"],
             "matchUpdateTypes": ["minor", "patch"],
             "automerge": true,
-            "groupName": "Drush",
             "prPriority": 10
         },
         {
@@ -29,6 +30,16 @@
             "major": {
                  "dependencyDashboardApproval": true
             }
+        },
+        {
+            "description": "Automerge some Drupal modules that are known to be safe",
+            "packageNames": [
+                "drupal/antibot",
+                "drupal/address"
+            ],
+            "matchUpdateTypes": ["patch"],
+            "automerge": true,
+            "prPriority": 10
         }
     ]
 }
