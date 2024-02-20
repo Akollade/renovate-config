@@ -35,7 +35,9 @@
             "description": "Automerge some Drupal modules that are known to be safe",
             "packageNames": [
                 "drupal/antibot",
-                "drupal/address"
+                "drupal/address",
+                "drupal/admin_toolbar",
+                "drupal/webform"
             ],
             "matchUpdateTypes": ["patch"],
             "automerge": true,
