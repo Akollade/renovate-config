@@ -46,7 +46,8 @@
         {
             "description": "Automerge some Drupal modules that are known to be safe and use only minor versions",
             "packageNames": [
-                "drupal/paragraphs"
+                "drupal/paragraphs",
+                "drupal/pathauto"
             ],
             "matchUpdateTypes": ["minor"],
             "automerge": true,
