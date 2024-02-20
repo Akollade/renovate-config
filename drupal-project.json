@@ -42,6 +42,15 @@
             "matchUpdateTypes": ["patch"],
             "automerge": true,
             "prPriority": 10
+        },
+        {
+            "description": "Automerge some Drupal modules that are known to be safe and use only minor versions",
+            "packageNames": [
+                "drupal/paragraphs"
+            ],
+            "matchUpdateTypes": ["minor"],
+            "automerge": true,
+            "prPriority": 10
         }
     ]
 }
