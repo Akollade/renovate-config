@@ -35,7 +35,7 @@
             "datasources": ["npm"],
             "matchDepTypes": ["dependencies"],
             "schedule": [
-              "before 8am on the first week of the month"
+              "before 8am on every weekday of the first week of the month"
             ]
         },
         {
@@ -45,7 +45,7 @@
             "automerge": true,
             "prPriority": 10,
             "schedule": [
-              "before 8am on the last week of the month"
+              "before 8am on every weekday of the last week of the month"
             ]
         },
         {
@@ -55,13 +55,13 @@
             "automerge": true,
             "prPriority": 10,
             "schedule": [
-                "before 8am on the last week of the month"
+                "before 8am on every weekday of the last week of the month"
             ]
         },
         {
             "datasources": ["docker"],
             "schedule": [
-                "before 8am on the last week of the month"
+                "before 8am on every weekday of the last week of the month"
             ]
         },
         {
