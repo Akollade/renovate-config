@@ -47,9 +47,10 @@
             "description": "Automerge some Drupal modules that are known to be safe and use only minor versions",
             "packageNames": [
                 "drupal/paragraphs",
-                "drupal/pathauto"
+                "drupal/pathauto",
+                "drupal/twig_tweak"
             ],
-            "matchUpdateTypes": ["minor"],
+            "matchUpdateTypes": ["minor", "patch"],
             "automerge": true,
             "prPriority": 10
         }
