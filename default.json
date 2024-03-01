@@ -76,6 +76,18 @@
             "updateTypes": ["major"],
             "matchPackagePrefixes": ["symfony/"],
             "dependencyDashboardApproval": true
+        },
+        {
+            "datasources": ["npm"],
+            "updateTypes": ["major", "minor"],
+            "matchPackageNames": ["bootstrap"],
+            "dependencyDashboardApproval": true
+        },
+        {
+            "datasources": ["npm"],
+            "updateTypes": ["patch"],
+            "matchPackageNames": ["bootstrap"],
+            "automerge": true
         }
     ]
 }
