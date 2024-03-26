@@ -88,6 +88,12 @@
             "updateTypes": ["patch"],
             "matchPackageNames": ["bootstrap"],
             "automerge": true
+        },
+        {
+            "datasources": ["packagist"],
+            "updateTypes": ["patch", "minor],
+            "matchPackageNames": ["giggsey/libphonenumber-for-php"],
+            "automerge": true
         }
     ]
 }
