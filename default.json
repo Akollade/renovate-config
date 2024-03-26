@@ -91,7 +91,7 @@
         },
         {
             "datasources": ["packagist"],
-            "updateTypes": ["patch", "minor],
+            "updateTypes": ["patch", "minor"],
             "matchPackageNames": ["giggsey/libphonenumber-for-php"],
             "automerge": true
         }
