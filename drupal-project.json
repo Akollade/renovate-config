@@ -22,6 +22,14 @@
             "groupName": "Drupal Commerce modules"
         },
         {
+            "packageNames": [
+                "drupal/gin",
+                "drupal/gin_toolbar",
+                "drupal/gin_login"
+            ],
+            "groupName": "Drupal Gin admin theme modules"
+        },
+        {
             "matchPackagePatterns": ["^drupal/core"],
             "groupName": "Drupal Core",
             "patch": {
