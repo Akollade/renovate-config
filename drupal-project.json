@@ -45,6 +45,7 @@
                 "drupal/antibot",
                 "drupal/address",
                 "drupal/admin_toolbar",
+                "drupal/raven",
                 "drupal/webform"
             ],
             "matchUpdateTypes": ["patch"],
