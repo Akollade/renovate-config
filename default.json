@@ -72,6 +72,18 @@
           ]
         },
         {
+            "groupName": "PHPStan packages",
+            "matchDatasources": [
+              "packagist"
+            ],
+            "matchPackagePatterns": [
+              "^phpstan/phpstan$",
+              "^phpstan/extension-installer$",
+              "/phpstan-",
+              "/larastan"
+            ]
+        },
+        {
             "datasources": ["packagist"],
             "updateTypes": ["major"],
             "matchPackagePrefixes": ["symfony/"],
