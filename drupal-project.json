@@ -10,6 +10,22 @@
     ],
     "packageRules": [
         {
+            "matchPackagePatterns": ["^drupal/core"],
+            "groupName": "Drupal Core",
+            "patch": {
+                "automerge": true,
+                "minimumReleaseAge": "2 days",
+                "internalChecksFilter": "strict"
+            },
+            "minor": {
+                "minimumReleaseAge": "30 days",
+                "internalChecksFilter": "strict"
+            },
+            "major": {
+                 "dependencyDashboardApproval": true
+            }
+        },
+        {
             "groupName": "Drush",
             "description": "Automerge drush patch and minor updates",
             "packageNames": ["drush/drush"],
@@ -28,16 +44,6 @@
                 "drupal/gin_login"
             ],
             "groupName": "Drupal Gin admin theme modules"
-        },
-        {
-            "matchPackagePatterns": ["^drupal/core"],
-            "groupName": "Drupal Core",
-            "patch": {
-                "automerge": true
-            },
-            "major": {
-                 "dependencyDashboardApproval": true
-            }
         },
         {
             "description": "Automerge some Drupal modules that are known to be safe",
