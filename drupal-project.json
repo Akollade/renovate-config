@@ -10,7 +10,12 @@
     ],
     "packageRules": [
         {
-            "matchPackagePatterns": ["^drupal/core"],
+            "packageNames": [
+                "drupal/core",
+                "drupal/core-dev",
+                "drupal/core-recommended",
+                "drupal/core-composer-scaffold"
+            ],
             "groupName": "Drupal Core",
             "patch": {
                 "automerge": true,
