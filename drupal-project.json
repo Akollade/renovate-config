@@ -10,12 +10,7 @@
     ],
     "packageRules": [
         {
-            "packageNames": [
-                "drupal/core",
-                "drupal/core-dev",
-                "drupal/core-recommended",
-                "drupal/core-composer-scaffold"
-            ],
+            "matchPackagePatterns": ["^drupal/core"],
             "groupName": "Drupal Core",
             "patch": {
                 "automerge": true,
@@ -23,8 +18,7 @@
                 "internalChecksFilter": "strict"
             },
             "minor": {
-                "minimumReleaseAge": "30 days",
-                "internalChecksFilter": "strict"
+                 "dependencyDashboardApproval": true
             },
             "major": {
                  "dependencyDashboardApproval": true
