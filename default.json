@@ -107,7 +107,8 @@
             "matchPackageNames": [
                 "composer/installers",
                 "giggsey/libphonenumber-for-php",
-                "doctrine/migrations"
+                "doctrine/migrations",
+                "stof/doctrine-extensions-bundle"
             ],
             "automerge": true
         }
