@@ -104,13 +104,11 @@
         {
             "datasources": ["packagist"],
             "updateTypes": ["patch", "minor"],
-            "matchPackageNames": ["giggsey/libphonenumber-for-php"],
-            "automerge": true
-        },
-        {
-            "datasources": ["packagist"],
-            "updateTypes": ["patch", "minor"],
-            "matchPackageNames": ["composer/installers"],
+            "matchPackageNames": [
+                "composer/installers",
+                "giggsey/libphonenumber-for-php",
+                "doctrine/migrations"
+            ],
             "automerge": true
         }
     ]
