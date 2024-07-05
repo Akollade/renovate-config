@@ -13,9 +13,7 @@
             "matchPackagePatterns": ["^drupal/core"],
             "groupName": "Drupal Core",
             "patch": {
-                "automerge": true,
-                "minimumReleaseAge": "2 days",
-                "internalChecksFilter": "strict"
+                "automerge": true
             },
             "minor": {
                  "dependencyDashboardApproval": true
