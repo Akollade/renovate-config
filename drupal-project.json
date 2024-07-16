@@ -49,6 +49,7 @@
                 "drupal/address",
                 "drupal/admin_toolbar",
                 "drupal/raven",
+                "drupal/schema_metatag",
                 "drupal/webform"
             ],
             "matchUpdateTypes": ["patch"],
