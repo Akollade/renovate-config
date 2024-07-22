@@ -48,6 +48,7 @@
                 "drupal/antibot",
                 "drupal/address",
                 "drupal/admin_toolbar",
+                "drupal/media_file_delete",
                 "drupal/raven",
                 "drupal/schema_metatag",
                 "drupal/webform"
