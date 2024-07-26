@@ -1,0 +1,17 @@
+{
+    "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+    "packageRules": [
+        {
+            "matchPackageNames": ["sass-loader"],
+            "patch": {
+                "automerge": true
+            },
+            "minor": {
+                "automerge": true
+            },
+            "major": {
+                 "dependencyDashboardApproval": true
+            }
+        }
+    ]
+}
