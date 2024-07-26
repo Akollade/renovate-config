@@ -3,12 +3,7 @@
     "packageRules": [
         {
             "matchPackageNames": ["sass-loader"],
-            "patch": {
-                "automerge": true
-            },
-            "minor": {
-                "automerge": true
-            },
+            "automerge": true,
             "major": {
                  "dependencyDashboardApproval": true
             }
