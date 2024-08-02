@@ -32,14 +32,14 @@
             "enabled": false
         },
         {
-            "datasources": ["npm"],
+            "matchDatasources": ["npm"],
             "matchDepTypes": ["dependencies"],
             "schedule": [
               "before 8:00am every weekday on the first week of the month"
             ]
         },
         {
-            "datasources": ["npm"],
+            "matchDatasources": ["npm"],
             "matchDepTypes": ["devDependencies"],
             "matchUpdateTypes": ["minor", "patch", "pin", "digest"],
             "automerge": true,
@@ -49,7 +49,7 @@
             ]
         },
         {
-            "datasources": ["packagist"],
+            "matchDatasources": ["packagist"],
             "matchDepTypes": ["require-dev"],
             "matchUpdateTypes": ["minor", "patch", "pin", "digest"],
             "automerge": true,
@@ -59,7 +59,7 @@
             ]
         },
         {
-            "datasources": ["docker"],
+            "matchDatasources": ["docker"],
             "schedule": [
                 "before 8:00am every weekday on the 24th through 30th day of the month"
             ]
@@ -84,25 +84,25 @@
             ]
         },
         {
-            "datasources": ["packagist"],
+            "matchDatasources": ["packagist"],
             "updateTypes": ["major"],
             "matchPackagePrefixes": ["symfony/"],
             "dependencyDashboardApproval": true
         },
         {
-            "datasources": ["npm"],
+            "matchDatasources": ["npm"],
             "updateTypes": ["major", "minor"],
             "matchPackageNames": ["bootstrap"],
             "dependencyDashboardApproval": true
         },
         {
-            "datasources": ["npm"],
+            "matchDatasources": ["npm"],
             "updateTypes": ["patch"],
             "matchPackageNames": ["bootstrap"],
             "automerge": true
         },
         {
-            "datasources": ["packagist"],
+            "matchDatasources": ["packagist"],
             "updateTypes": ["patch", "minor"],
             "matchPackageNames": [
                 "composer/installers",

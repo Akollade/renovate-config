@@ -2,9 +2,9 @@
     "$schema": "https://docs.renovatebot.com/renovate-schema.json",
     "packageRules": [
         {
-            "datasources": ["npm"],
-            "packageNames": ["tarteaucitronjs"],
+            "matchDatasources": ["npm"],
+            "matchPackageNames": ["tarteaucitronjs"],
             "schedule": ["before 8:00am every weekday"]
-          }
+        }
     ]
 }

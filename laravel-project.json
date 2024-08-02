@@ -5,11 +5,11 @@
     ],
     "packageRules": [
         {
-            "datasources": ["packagist"],
+            "matchDatasources": ["packagist"],
             "separateMinorPatch": false
         },
         {
-            "datasources": ["packagist"],
+            "matchDatasources": ["packagist"],
             "matchPackagePatterns": ["^filament/"],
             "groupName": "Filament"
         }

@@ -26,7 +26,7 @@
         {
             "groupName": "Drush",
             "description": "Automerge drush patch and minor updates",
-            "packageNames": ["drush/drush"],
+            "matchPackageNames": ["drush/drush"],
             "matchUpdateTypes": ["minor", "patch"],
             "automerge": true,
             "prPriority": 10
@@ -36,7 +36,7 @@
             "groupName": "Drupal Commerce modules"
         },
         {
-            "packageNames": [
+            "matchPackageNames": [
                 "drupal/gin",
                 "drupal/gin_toolbar",
                 "drupal/gin_login"
@@ -45,7 +45,7 @@
         },
         {
             "description": "Automerge some Drupal modules that are known to be safe",
-            "packageNames": [
+            "matchPackageNames": [
                 "drupal/antibot",
                 "drupal/address",
                 "drupal/admin_toolbar",
@@ -61,7 +61,7 @@
         },
         {
             "description": "Automerge some Drupal modules that are known to be safe and use only minor versions",
-            "packageNames": [
+            "matchPackageNames": [
                 "drupal/paragraphs",
                 "drupal/pathauto",
                 "drupal/twig_tweak",
