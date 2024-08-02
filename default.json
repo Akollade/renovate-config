@@ -12,9 +12,7 @@
         "github>akollade/renovate-config:_github-actions"
     ],
     "timezone": "Europe/Paris",
-    "schedule": [
-        "before 8:00am every weekday"
-    ],
+    "schedule": ["before 8:00am every weekday"],
     "updateNotScheduled": false,
     "rangeStrategy": "bump",
     "commitMessagePrefix": ":arrow_up:",
@@ -25,18 +23,11 @@
     "platformAutomerge": true,
     "dependencyDashboardLabels": ["renovate"],
     "packageRules": [
-        {
-            "matchDepNames": [
-                "php"
-            ],
-            "enabled": false
-        },
+        {"matchDepNames": ["php"], "enabled": false},
         {
             "matchDatasources": ["npm"],
             "matchDepTypes": ["dependencies"],
-            "schedule": [
-              "before 8:00am every weekday on the first week of the month"
-            ]
+            "schedule": ["before 8:00am every weekday on the first week of the month"]
         },
         {
             "matchDatasources": ["npm"],
@@ -45,7 +36,7 @@
             "automerge": true,
             "prPriority": 10,
             "schedule": [
-              "before 8:00am every weekday on the 24th through 30th day of the month"
+                "before 8:00am every weekday on the 24th through 30th day of the month"
             ]
         },
         {
@@ -65,45 +56,41 @@
             ]
         },
         {
-          "groupName": "twig packages",
-          "groupSlug": "twig",
-          "matchPackagePrefixes": [
-            "twig/"
-          ]
+            "groupName": "twig packages",
+            "groupSlug": "twig",
+            "matchPackageNames": ["twig/{/,}**"]
         },
         {
             "groupName": "PHPStan packages",
-            "matchDatasources": [
-              "packagist"
-            ],
-            "matchPackagePatterns": [
-              "^phpstan/phpstan$",
-              "^phpstan/extension-installer$",
-              "/phpstan-",
-              "/larastan"
+            "matchDatasources": ["packagist"],
+            "matchPackageNames": [
+                "/^phpstan/phpstan$/",
+                "/^phpstan/extension-installer$/",
+                "//phpstan-/",
+                "//larastan/"
             ]
         },
         {
             "matchDatasources": ["packagist"],
-            "updateTypes": ["major"],
-            "matchPackagePrefixes": ["symfony/"],
-            "dependencyDashboardApproval": true
+            "matchUpdateTypes": ["major"],
+            "dependencyDashboardApproval": true,
+            "matchPackageNames": ["symfony/{/,}**"]
         },
         {
             "matchDatasources": ["npm"],
-            "updateTypes": ["major", "minor"],
+            "matchUpdateTypes": ["major", "minor"],
             "matchPackageNames": ["bootstrap"],
             "dependencyDashboardApproval": true
         },
         {
             "matchDatasources": ["npm"],
-            "updateTypes": ["patch"],
+            "matchUpdateTypes": ["patch"],
             "matchPackageNames": ["bootstrap"],
             "automerge": true
         },
         {
             "matchDatasources": ["packagist"],
-            "updateTypes": ["patch", "minor"],
+            "matchUpdateTypes": ["patch", "minor"],
             "matchPackageNames": [
                 "composer/installers",
                 "giggsey/libphonenumber-for-php",

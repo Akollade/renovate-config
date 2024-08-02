@@ -5,23 +5,14 @@
         "github>akollade/renovate-config:_symfony_webpack_encore",
         ":separatePatchReleases"
     ],
-    "ignorePaths": [
-        "web/libraries/**",
-        "libraries/**"
-    ],
+    "ignorePaths": ["web/libraries/**", "libraries/**"],
     "packageRules": [
         {
-            "matchPackagePatterns": ["^drupal/core"],
             "groupName": "Drupal Core",
-            "patch": {
-                "automerge": true
-            },
-            "minor": {
-                 "dependencyDashboardApproval": true
-            },
-            "major": {
-                 "dependencyDashboardApproval": true
-            }
+            "patch": {"automerge": true},
+            "minor": {"dependencyDashboardApproval": true},
+            "major": {"dependencyDashboardApproval": true},
+            "matchPackageNames": ["/^drupal/core/"]
         },
         {
             "groupName": "Drush",
@@ -32,8 +23,8 @@
             "prPriority": 10
         },
         {
-            "matchPackagePatterns": ["^drupal/commerce"],
-            "groupName": "Drupal Commerce modules"
+            "groupName": "Drupal Commerce modules",
+            "matchPackageNames": ["/^drupal/commerce/"]
         },
         {
             "matchPackageNames": [
