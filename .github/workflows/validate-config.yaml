@@ -1,0 +1,21 @@
+name: Validate config
+
+on:
+    push:
+        branches:
+            - main
+    pull_request:
+    workflow_dispatch:
+
+jobs:
+    validate-config:
+        name: Validate
+        runs-on: ubuntu-latest
+        steps:
+            - name: Checkout
+              uses: actions/checkout@v4
+            - name: Validate
+              uses: rinchsan/renovate-config-validator@main
+              with:
+                  pattern: '*.json'
+
