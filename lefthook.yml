@@ -1,0 +1,6 @@
+pre-commit:
+  parallel: true
+  commands:
+    composer-validate:
+      glob: "*.{json}"
+      run: npx --yes --package renovate -- renovate-config-validator --strict {staged_files}

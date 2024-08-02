@@ -5,38 +5,29 @@
         "github>akollade/renovate-config:_symfony_webpack_encore",
         ":separatePatchReleases"
     ],
-    "ignorePaths": [
-        "web/libraries/**",
-        "libraries/**"
-    ],
+    "ignorePaths": ["web/libraries/**", "libraries/**"],
     "packageRules": [
         {
-            "matchPackagePatterns": ["^drupal/core"],
             "groupName": "Drupal Core",
-            "patch": {
-                "automerge": true
-            },
-            "minor": {
-                 "dependencyDashboardApproval": true
-            },
-            "major": {
-                 "dependencyDashboardApproval": true
-            }
+            "patch": {"automerge": true},
+            "minor": {"dependencyDashboardApproval": true},
+            "major": {"dependencyDashboardApproval": true},
+            "matchPackageNames": ["/^drupal/core/"]
         },
         {
             "groupName": "Drush",
             "description": "Automerge drush patch and minor updates",
-            "packageNames": ["drush/drush"],
+            "matchPackageNames": ["drush/drush"],
             "matchUpdateTypes": ["minor", "patch"],
             "automerge": true,
             "prPriority": 10
         },
         {
-            "matchPackagePatterns": ["^drupal/commerce"],
-            "groupName": "Drupal Commerce modules"
+            "groupName": "Drupal Commerce modules",
+            "matchPackageNames": ["/^drupal/commerce/"]
         },
         {
-            "packageNames": [
+            "matchPackageNames": [
                 "drupal/gin",
                 "drupal/gin_toolbar",
                 "drupal/gin_login"
@@ -45,7 +36,7 @@
         },
         {
             "description": "Automerge some Drupal modules that are known to be safe",
-            "packageNames": [
+            "matchPackageNames": [
                 "drupal/antibot",
                 "drupal/address",
                 "drupal/admin_toolbar",
@@ -61,7 +52,7 @@
         },
         {
             "description": "Automerge some Drupal modules that are known to be safe and use only minor versions",
-            "packageNames": [
+            "matchPackageNames": [
                 "drupal/paragraphs",
                 "drupal/pathauto",
                 "drupal/twig_tweak",

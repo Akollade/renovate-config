@@ -6,7 +6,7 @@
     ],
     "packageRules": [
         {
-            "datasources": ["packagist"],
+            "matchDatasources": ["packagist"],
             "separateMinorPatch": false
         }
     ]
