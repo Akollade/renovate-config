@@ -2,9 +2,9 @@
     "$schema": "https://docs.renovatebot.com/renovate-schema.json",
     "extends": ["github>akollade/renovate-config:default"],
     "packageRules": [
-        {"matchDatasources": ["packagist"], "separateMinorPatch": false},
+        {"matchManagers": ["composer"], "separateMinorPatch": false},
         {
-            "matchDatasources": ["packagist"],
+            "matchManagers": ["composer"],
             "groupName": "Filament",
             "matchPackageNames": ["/^filament//"]
         }

@@ -25,12 +25,12 @@
     "packageRules": [
         {"matchDepNames": ["php"], "enabled": false},
         {
-            "matchDatasources": ["npm"],
+            "matchManagers": ["npm"],
             "matchDepTypes": ["dependencies"],
             "schedule": ["before 8:00am every weekday on the first week of the month"]
         },
         {
-            "matchDatasources": ["npm"],
+            "matchManagers": ["npm"],
             "matchDepTypes": ["devDependencies"],
             "matchUpdateTypes": ["minor", "patch", "pin", "digest"],
             "automerge": true,
@@ -40,7 +40,7 @@
             ]
         },
         {
-            "matchDatasources": ["packagist"],
+            "matchManagers": ["composer"],
             "matchDepTypes": ["require-dev"],
             "matchUpdateTypes": ["minor", "patch", "pin", "digest"],
             "automerge": true,
@@ -62,7 +62,7 @@
         },
         {
             "groupName": "PHPStan packages",
-            "matchDatasources": ["packagist"],
+            "matchManagers": ["composer"],
             "matchPackageNames": [
                 "/^phpstan/phpstan$/",
                 "/^phpstan/extension-installer$/",
@@ -72,27 +72,27 @@
         },
         {
             "description": "Symfony major versions needs approval",
-            "matchDatasources": ["packagist"],
+            "matchManagers": ["composer"],
             "matchUpdateTypes": ["major"],
             "dependencyDashboardApproval": true,
             "matchPackageNames": ["symfony/{/,}**"]
         },
         {
             "description": "Bootstrap major and minor versions needs approval",
-            "matchDatasources": ["npm"],
+            "matchManagers": ["npm"],
             "matchUpdateTypes": ["major", "minor"],
             "matchPackageNames": ["bootstrap"],
             "dependencyDashboardApproval": true
         },
         {
             "description": "Automerge Bootstrap patches",
-            "matchDatasources": ["npm"],
+            "matchManagers": ["npm"],
             "matchUpdateTypes": ["patch"],
             "matchPackageNames": ["bootstrap"],
             "automerge": true
         },
         {
-            "matchDatasources": ["packagist"],
+            "matchManagers": ["composer"],
             "matchUpdateTypes": ["patch", "minor"],
             "matchPackageNames": [
                 "composer/installers",
