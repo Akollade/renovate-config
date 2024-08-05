@@ -61,7 +61,7 @@
             "matchPackageNames": [
                 "drupal/gin"
             ],
-            "rangeStrategy": "auto"
+            "rangeStrategy": "update-lockfile"
         },
         {
             "groupName": "twig packages",
