@@ -56,6 +56,12 @@
             ]
         },
         {
+            "description": "Dont bump for unstable versions",
+            "matchManagers": ["composer"],
+            "matchCurrentVersion": "/.*(beta|alpha|rc).*/i",
+            "rangeStrategy": "auto"
+        },
+        {
             "groupName": "twig packages",
             "groupSlug": "twig",
             "matchManagers": ["composer"],
