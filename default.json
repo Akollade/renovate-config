@@ -58,6 +58,7 @@
         {
             "groupName": "twig packages",
             "groupSlug": "twig",
+            "matchManagers": ["composer"],
             "matchPackageNames": ["twig/{/,}**"]
         },
         {
