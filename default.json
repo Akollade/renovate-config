@@ -71,18 +71,21 @@
             ]
         },
         {
+            "description": "Symfony major versions needs approval",
             "matchDatasources": ["packagist"],
             "matchUpdateTypes": ["major"],
             "dependencyDashboardApproval": true,
             "matchPackageNames": ["symfony/{/,}**"]
         },
         {
+            "description": "Bootstrap major and minor versions needs approval",
             "matchDatasources": ["npm"],
             "matchUpdateTypes": ["major", "minor"],
             "matchPackageNames": ["bootstrap"],
             "dependencyDashboardApproval": true
         },
         {
+            "description": "Automerge Bootstrap patches",
             "matchDatasources": ["npm"],
             "matchUpdateTypes": ["patch"],
             "matchPackageNames": ["bootstrap"],
