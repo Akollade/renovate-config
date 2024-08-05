@@ -58,7 +58,9 @@
         {
             "description": "Dont bump for unstable versions",
             "matchManagers": ["composer"],
-            "matchCurrentVersion": "/.*(beta|alpha|rc).*/i",
+            "matchPackageNames": [
+                "drupal/gin"
+            ],
             "rangeStrategy": "auto"
         },
         {
