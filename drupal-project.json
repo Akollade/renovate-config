@@ -61,6 +61,12 @@
             "matchUpdateTypes": ["minor", "patch"],
             "automerge": true,
             "prPriority": 10
+        },
+        {
+            "description": "Automerge sass-loader for Webpack Encore",
+            "matchPackageNames": ["sass-loader"],
+            "automerge": true,
+            "allowedVersions": "<15"
         }
     ]
 }
