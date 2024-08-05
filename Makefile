@@ -3,6 +3,7 @@
 ## -----
 ##
 
+RENOVATE_VERSION=37
 
 ##
 ## Project
@@ -14,7 +15,7 @@ install: .git/hooks/pre-commit ## Install the project
 
 .PHONY: validate-config
 validate-config: ## Validate the config
-	@npx --yes --package renovate -- renovate-config-validator --strict *.json
+	@npx --yes --package renovate@${RENOVATE_VERSION} -- renovate-config-validator --strict *.json
 
 ##
 ## Git hooks

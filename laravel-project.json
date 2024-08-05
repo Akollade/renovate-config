@@ -6,7 +6,7 @@
         {
             "matchManagers": ["composer"],
             "groupName": "Filament",
-            "matchPackageNames": ["/^filament//"]
+            "matchPackagePatterns": ["^filament/"]
         }
     ]
 }

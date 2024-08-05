@@ -14,8 +14,13 @@ jobs:
         steps:
             - name: Checkout
               uses: actions/checkout@v4
-            - name: Validate
-              uses: rinchsan/renovate-config-validator@main
-              with:
-                  pattern: '*.json'
 
+            - name: Setup node
+              uses: actions/setup-node@1e60f620b9541d16bece96c5465dc8ee9832be0b # v4
+              with:
+                node-version: 20
+                cache: 'npm'
+                cache-dependency-path: 'Makefile'
+
+            - name: Validate the config
+              run: make validate-config
