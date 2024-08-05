@@ -56,14 +56,6 @@
             ]
         },
         {
-            "description": "Dont bump for unstable versions",
-            "matchManagers": ["composer"],
-            "matchPackageNames": [
-                "drupal/gin"
-            ],
-            "rangeStrategy": "update-lockfile"
-        },
-        {
             "groupName": "twig packages",
             "groupSlug": "twig",
             "matchManagers": ["composer"],
