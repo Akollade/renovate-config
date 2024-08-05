@@ -59,6 +59,7 @@
             "description": "Unstable versions needs approval",
             "matchManagers": ["composer"],
             "matchCurrentVersion": "/.*(beta|alpha|rc).*/i",
+            "rangeStrategy": "update-lockfile",
             "dependencyDashboardApproval": true
         },
         {
