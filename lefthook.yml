@@ -3,4 +3,4 @@ pre-commit:
   commands:
     composer-validate:
       glob: "*.{json}"
-      run: npx --yes --package renovate -- renovate-config-validator --strict {staged_files}
+      run: make validate-config
