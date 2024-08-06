@@ -65,18 +65,16 @@
             "groupName": "twig packages",
             "groupSlug": "twig",
             "matchManagers": ["composer"],
-            "matchPackagePrefixes": [
-                "twig/"
-            ]
+            "matchPackageNames": ["twig/{/,}**"]
         },
         {
             "groupName": "PHPStan packages",
             "matchManagers": ["composer"],
-            "matchPackagePatterns": [
-                "^phpstan/phpstan$",
-                "^phpstan/extension-installer$",
-                "/phpstan-",
-                "/larastan"
+            "matchPackageNames": [
+                "/^phpstan/phpstan$/",
+                "/^phpstan/extension-installer$/",
+                "//phpstan-/",
+                "//larastan/"
             ]
         },
         {
@@ -84,7 +82,7 @@
             "matchManagers": ["composer"],
             "matchUpdateTypes": ["major"],
             "dependencyDashboardApproval": true,
-            "matchPackagePrefixes": ["symfony/"]
+            "matchPackageNames": ["symfony/{/,}**"]
         },
         {
             "description": "Bootstrap major and minor versions needs approval",
