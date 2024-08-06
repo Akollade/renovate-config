@@ -12,7 +12,7 @@
             "patch": {"automerge": true},
             "minor": {"dependencyDashboardApproval": true},
             "major": {"dependencyDashboardApproval": true},
-            "matchPackagePatterns": ["^drupal/core"]
+            "matchPackageNames": ["/^drupal/core/"]
         },
         {
             "groupName": "Drush",
@@ -24,7 +24,7 @@
         },
         {
             "groupName": "Drupal Commerce modules",
-            "matchPackagePatterns": ["^drupal/commerce"]
+            "matchPackageNames": ["/^drupal/commerce/"]
         },
         {
             "matchPackageNames": [

@@ -3,7 +3,7 @@
 ## -----
 ##
 
-RENOVATE_VERSION=37
+RENOVATE_VERSION=38
 
 ##
 ## Project
