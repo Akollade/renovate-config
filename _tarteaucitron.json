@@ -4,7 +4,6 @@
         {
             "matchManagers": ["npm"],
             "matchPackageNames": ["tarteaucitronjs"],
-            "schedule": ["before 8:00am every weekday"]
         }
     ]
 }

@@ -12,9 +12,6 @@
             "groupName": "GitHub Actions",
             "matchManagers": ["github-actions"],
             "prPriority": -10,
-            "schedule": [
-                "before 8:00am every weekday on the 24th through 30th day of the month"
-            ],
             "automerge": true
         }
     ]
