@@ -47,7 +47,7 @@
                 "drupal/address",
                 "drupal/admin_toolbar",
                 "drupal/media_file_delete",
-                "password_policy",
+                "drupal/password_policy",
                 "drupal/raven",
                 "drupal/schema_metatag",
                 "drupal/webform"
