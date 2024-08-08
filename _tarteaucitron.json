@@ -4,6 +4,8 @@
         {
             "matchManagers": ["npm"],
             "matchPackageNames": ["tarteaucitronjs"],
+            "schedule": ["before 8:00am every weekday"],
+            "prHeader": "This project uses tarteaucitron.io PRO and therefore must be always updated with the latest version."
         }
     ]
 }
