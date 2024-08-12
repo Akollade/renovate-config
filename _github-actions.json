@@ -11,7 +11,7 @@
         {
             "groupName": "GitHub Actions",
             "matchManagers": ["github-actions"],
-            "prPriority": -10,
+            "prPriority": 10,
             "automerge": true
         }
     ]
