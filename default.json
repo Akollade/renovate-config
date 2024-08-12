@@ -11,7 +11,7 @@
         "github>akollade/renovate-config:_github-actions"
     ],
     "timezone": "Europe/Paris",
-    "schedule": ["before 12:00am on monday"],
+    "schedule": ["before 00:30pm on monday"],
     "updateNotScheduled": false,
     "rangeStrategy": "bump",
     "commitMessagePrefix": ":arrow_up:",
