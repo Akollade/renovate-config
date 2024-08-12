@@ -63,7 +63,8 @@
                 "drupal/paragraphs",
                 "drupal/pathauto",
                 "drupal/twig_tweak",
-                "drupal/token"
+                "drupal/token",
+                "drupal/advban"
             ],
             "matchUpdateTypes": ["minor", "patch"],
             "automerge": true,
