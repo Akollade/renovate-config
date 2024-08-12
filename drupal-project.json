@@ -69,6 +69,14 @@
             "prPriority": 10
         },
         {
+            "matchManagers": ["npm"],
+            "matchDepTypes": ["devDependencies"],
+            "matchUpdateTypes": ["minor", "patch", "pin", "digest"],
+            "automerge": true,
+            "prPriority": 10,
+            "groupName": "NPM dev dependencies"
+        },
+        {
             "description": "Automerge sass-loader for Webpack Encore",
             "matchPackageNames": ["sass-loader"],
             "automerge": true,
