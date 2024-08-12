@@ -50,7 +50,8 @@
                 "drupal/password_policy",
                 "drupal/raven",
                 "drupal/schema_metatag",
-                "drupal/webform"
+                "drupal/webform",
+                "drupal/dotenv"
             ],
             "matchUpdateTypes": ["patch"],
             "automerge": true,
