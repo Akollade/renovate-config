@@ -15,7 +15,10 @@
         },
         {
             "groupName": "Drupal Core",
-            "patch": {"automerge": true},
+            "patch": {
+                "automerge": true,
+                "prPriority": 15
+            },
             "minor": {"dependencyDashboardApproval": true},
             "major": {"dependencyDashboardApproval": true},
             "matchPackageNames": ["/^drupal/core/"]
