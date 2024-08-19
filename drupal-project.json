@@ -45,7 +45,7 @@
         },
         {
             "description": "Automerge some Drupal modules that are known to be safe",
-            "groupName": "drupal-modules-patch",
+            "groupName": "drupal-modules-patch-automerge",
             "matchPackageNames": [
                 "drupal/antibot",
                 "drupal/address",
