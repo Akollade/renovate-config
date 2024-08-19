@@ -8,12 +8,6 @@
     "ignorePaths": ["web/libraries/**", "libraries/**"],
     "packageRules": [
         {
-            "description": "Wait 2 days before creating PR",
-            "minimumReleaseAge": "2 days",
-            "internalChecksFilter": "strict",
-            "matchPackageNames": ["/^drupal/"]
-        },
-        {
             "groupName": "Drupal Core",
             "patch": {
                 "automerge": true,
