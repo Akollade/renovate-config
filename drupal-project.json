@@ -71,7 +71,8 @@
                 "drupal/pathauto",
                 "drupal/twig_tweak",
                 "drupal/token",
-                "drupal/advban"
+                "drupal/advban",
+                "drupal/redirect"
             ],
             "matchUpdateTypes": ["minor", "patch"],
             "automerge": true,
