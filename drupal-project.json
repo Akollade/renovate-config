@@ -45,7 +45,8 @@
         },
         {
             "description": "Automerge some Drupal modules that are known to be safe",
-            "groupName": "drupal-modules-patch-automerge",
+            "groupName": "Drupal modules (safe / patch)",
+            "groupSlug": "drupal-modules-patch-automerge"
             "matchPackageNames": [
                 "drupal/antibot",
                 "drupal/address",
@@ -63,7 +64,8 @@
         },
         {
             "description": "Automerge some Drupal modules that are known to be safe and use only minor versions",
-            "groupName": "drupal-modules-minor-automerge",
+            "groupName": "Drupal modules (safe / minor)",
+            "groupSlug": "drupal-modules-minor-automerge"
             "matchPackageNames": [
                 "drupal/paragraphs",
                 "drupal/pathauto",
