@@ -70,6 +70,13 @@
             ]
         },
         {
+            "groupName": "DataTables packages",
+            "matchManagers": ["npm"],
+            "matchPackageNames": [
+                "//datatables.net-/",
+            ]
+        },
+        {
             "description": "Symfony major versions needs approval",
             "matchManagers": ["composer"],
             "matchUpdateTypes": ["major"],
