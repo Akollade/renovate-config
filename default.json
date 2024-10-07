@@ -73,7 +73,7 @@
             "groupName": "DataTables packages",
             "matchManagers": ["npm"],
             "matchPackageNames": [
-                "//datatables.net-/",
+                "//datatables.net-/"
             ]
         },
         {
