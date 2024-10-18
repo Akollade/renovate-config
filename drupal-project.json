@@ -78,7 +78,8 @@
             "matchUpdateTypes": ["minor", "patch", "pin", "digest"],
             "automerge": true,
             "prPriority": 10,
-            "groupName": "NPM dev dependencies"
+            "groupName": "NPM dev dependencies",
+            "groupSlug": "npm-dev-dependencies"
         },
         {
             "description": "Automerge sass-loader for Webpack Encore",
