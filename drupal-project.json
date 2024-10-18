@@ -84,7 +84,7 @@
             "description": "Automerge sass-loader for Webpack Encore",
             "matchPackageNames": ["sass-loader"],
             "automerge": true,
-            "allowedVersions": "<15"
+            "allowedVersions": "<=16"
         }
     ]
 }
