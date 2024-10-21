@@ -10,6 +10,7 @@
         ":label(renovate)",
         "github>akollade/renovate-config:_github-actions"
     ],
+    "ignorePresets": ["group:phpstan"],
     "timezone": "Europe/Paris",
     "schedule": ["on the 1st and 3rd day instance on Monday before 05:00pm"],
     "updateNotScheduled": false,
