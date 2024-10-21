@@ -11,7 +11,7 @@
         "github>akollade/renovate-config:_github-actions"
     ],
     "timezone": "Europe/Paris",
-    "schedule": ["on the 1st and 3rd day instance on Monday before 01:30pm"],
+    "schedule": ["on the 1st day instance on Monday before 05:00pm"],
     "updateNotScheduled": false,
     "rangeStrategy": "bump",
     "commitMessagePrefix": ":arrow_up:",
@@ -66,7 +66,8 @@
                 "/^phpstan/phpstan$/",
                 "/^phpstan/extension-installer$/",
                 "//phpstan-/",
-                "//larastan/"
+                "//larastan/",
+                "spaze/phpstan-disallowed-calls"
             ]
         },
         {
