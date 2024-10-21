@@ -10,7 +10,6 @@
         ":label(renovate)",
         "github>akollade/renovate-config:_github-actions"
     ],
-    "ignorePresets": ["group:phpstan"],
     "timezone": "Europe/Paris",
     "schedule": ["on the 1st and 3rd day instance on Monday before 05:00pm"],
     "updateNotScheduled": false,
@@ -59,19 +58,6 @@
             "groupSlug": "twig",
             "matchDatasources": ["packagist"],
             "matchPackageNames": ["twig/{/,}**"]
-        },
-        {
-            "groupName": "PHPStan packages",
-            "matchDatasources": ["packagist"],
-            "matchPackageNames": [
-                "phpstan/phpstan",
-                "phpstan/extension-installer",
-                "phpstan/phpstan-deprecation-rules",
-                "spaze/phpstan-disallowed-calls",
-                "phpstan/phpstan-symfony",
-                "phpstan/phpstan-doctrine",
-                "phpstan/phpstan-webmozart-assert"
-            ]
         },
         {
             "groupName": "DataTables packages",
