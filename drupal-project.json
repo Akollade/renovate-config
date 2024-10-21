@@ -18,9 +18,12 @@
             "matchPackageNames": ["/^drupal/core/"]
         },
         {
-            "groupName": "Drush",
-            "description": "Automerge drush patch and minor updates",
-            "matchPackageNames": ["drush/drush"],
+            "groupName": "Drupal tooling",
+            "description": "Automerge patch and minor updates of Drupal tools",
+            "matchPackageNames": [
+                "drush/drush",
+                "mglaman/composer-drupal-lenient"
+            ],
             "matchUpdateTypes": ["minor", "patch"],
             "automerge": true,
             "prPriority": 10

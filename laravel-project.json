@@ -5,15 +5,11 @@
     ],
     "packageRules": [
         {
-            "matchManagers": [
-                "composer"
-            ],
+            "matchDatasources": ["packagist"],
             "separateMinorPatch": false
         },
         {
-            "matchManagers": [
-                "composer"
-            ],
+            "matchDatasources": ["packagist"],
             "groupName": "Filament",
             "matchPackageNames": [
                 "/^filament//"
