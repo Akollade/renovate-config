@@ -42,7 +42,7 @@
             "prPriority": 10
         },
         {
-            "matchManagers": ["composer"],
+            "matchDatasources": ["packagist"],
             "matchDepTypes": ["require-dev"],
             "matchUpdateTypes": ["minor", "patch", "pin", "digest"],
             "automerge": true,
@@ -50,19 +50,19 @@
         },
         {
             "description": "Unstable versions needs approval",
-            "matchManagers": ["composer"],
+            "matchDatasources": ["packagist"],
             "matchCurrentVersion": "/.*(beta|alpha|rc).*/i",
             "dependencyDashboardApproval": true
         },
         {
             "groupName": "twig packages",
             "groupSlug": "twig",
-            "matchManagers": ["composer"],
+            "matchDatasources": ["packagist"],
             "matchPackageNames": ["twig/{/,}**"]
         },
         {
             "groupName": "PHPStan packages",
-            "matchManagers": ["composer"],
+            "matchDatasources": ["packagist"],
             "matchPackageNames": [
                 "phpstan/phpstan",
                 "phpstan/extension-installer",
@@ -82,7 +82,7 @@
         },
         {
             "description": "Symfony major versions needs approval",
-            "matchManagers": ["composer"],
+            "matchDatasources": ["packagist"],
             "matchUpdateTypes": ["major"],
             "dependencyDashboardApproval": true,
             "matchPackageNames": ["symfony/{/,}**"]
@@ -102,7 +102,7 @@
             "automerge": true
         },
         {
-            "matchManagers": ["composer"],
+            "matchDatasources": ["packagist"],
             "matchUpdateTypes": ["patch", "minor"],
             "matchPackageNames": [
                 "composer/installers",

@@ -88,7 +88,7 @@
             "allowedVersions": "<=16"
         },
         {
-            "matchManagers": ["composer"],
+            "matchDatasources": ["packagist"],
             "matchDepTypes": ["devDependencies"],
             "matchUpdateTypes": ["minor", "patch", "pin", "digest"],
             "automerge": true,

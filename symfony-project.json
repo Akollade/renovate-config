@@ -6,7 +6,7 @@
     ],
     "packageRules": [
         {
-            "matchManagers": ["composer"],
+            "matchDatasources": ["packagist"],
             "separateMinorPatch": false
         }
     ]
