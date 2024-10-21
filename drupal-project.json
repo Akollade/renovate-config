@@ -86,15 +86,6 @@
             "matchPackageNames": ["sass-loader"],
             "automerge": true,
             "allowedVersions": "<=16"
-        },
-        {
-            "matchDatasources": ["packagist"],
-            "matchDepTypes": ["devDependencies"],
-            "matchUpdateTypes": ["minor", "patch", "pin", "digest"],
-            "automerge": true,
-            "prPriority": 10,
-            "groupName": "Composer dev dependencies",
-            "groupSlug": "composer-dev-dependencies"
         }
     ]
 }

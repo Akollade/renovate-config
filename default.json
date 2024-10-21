@@ -45,7 +45,9 @@
             "matchDepTypes": ["require-dev"],
             "matchUpdateTypes": ["minor", "patch", "pin", "digest"],
             "automerge": true,
-            "prPriority": 10
+            "prPriority": 10,
+            "groupName": "Composer dev dependencies",
+            "groupSlug": "composer-dev-dependencies"
         },
         {
             "description": "Unstable versions needs approval",
