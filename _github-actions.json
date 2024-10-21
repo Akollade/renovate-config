@@ -4,7 +4,8 @@
         {
             "matchManagers": ["github-actions"],
             "matchPackageNames": [
-                "mariadb"
+                "mariadb",
+                "mysql"
             ],
             "enabled": false
         },
