@@ -11,7 +11,7 @@
         "github>akollade/renovate-config:_github-actions"
     ],
     "timezone": "Europe/Paris",
-    "schedule": ["on the 1st day instance on Monday before 05:00pm"],
+    "schedule": ["on the 1st and 3rd day instance on Monday before 05:00pm"],
     "updateNotScheduled": false,
     "rangeStrategy": "bump",
     "commitMessagePrefix": ":arrow_up:",
@@ -63,11 +63,13 @@
             "groupName": "PHPStan packages",
             "matchManagers": ["composer"],
             "matchPackageNames": [
-                "/^phpstan/phpstan$/",
-                "/^phpstan/extension-installer$/",
-                "//phpstan-/",
-                "//larastan/",
-                "spaze/phpstan-disallowed-calls"
+                "phpstan/phpstan",
+                "phpstan/extension-installer",
+                "phpstan/phpstan-deprecation-rules",
+                "spaze/phpstan-disallowed-calls",
+                "phpstan/phpstan-symfony",
+                "phpstan/phpstan-doctrine",
+                "phpstan/phpstan-webmozart-assert"
             ]
         },
         {
