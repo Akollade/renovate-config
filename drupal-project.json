@@ -2,8 +2,7 @@
     "$schema": "https://docs.renovatebot.com/renovate-schema.json",
     "extends": [
         "github>akollade/renovate-config:default",
-        "github>akollade/renovate-config:_symfony_webpack_encore",
-        ":separatePatchReleases"
+        "github>akollade/renovate-config:_symfony_webpack_encore"
     ],
     "ignorePaths": ["web/libraries/**", "libraries/**"],
     "packageRules": [
@@ -15,7 +14,8 @@
             },
             "minor": {"dependencyDashboardApproval": true},
             "major": {"dependencyDashboardApproval": true},
-            "matchPackageNames": ["/^drupal/core/"]
+            "matchPackageNames": ["/^drupal/core/"],
+            "separateMinorPatch": true
         },
         {
             "groupName": "Drupal tooling",

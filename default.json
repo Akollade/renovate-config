@@ -112,7 +112,6 @@
               "phpstan/extension-installer",
               "spaze/phpstan-disallowed-calls"
             ],
-            "separateMinorPatch": false,
             "separateMajorMinor": false,
             "separateMultipleMajor": false
           }
