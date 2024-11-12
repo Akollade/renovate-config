@@ -99,6 +99,20 @@
                 "stof/doctrine-extensions-bundle"
             ],
             "automerge": true
-        }
+        },
+        {
+            "groupName": "PHPStan packages",
+            "matchDatasources": [
+              "packagist"
+            ],
+            "matchPackageNames": [
+              "phpstan/phpstan",
+              "//phpstan-/",
+              "//larastan/",
+              "phpstan/extension-installer",
+              "spaze/phpstan-disallowed-calls"
+            ],
+            "separateMinorPatch": false
+          }
     ]
 }
