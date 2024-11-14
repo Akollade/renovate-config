@@ -25,7 +25,8 @@
         "enabled": true,
         "labels": ["security"],
         "automerge": true,
-        "schedule": ["before 8:00am every weekday"]
+        "schedule": ["before 8:00am every weekday"],
+        "dependencyDashboardApproval": false
     },
     "packageRules": [
         {"matchDepNames": ["php"], "enabled": false},
