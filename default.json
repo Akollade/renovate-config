@@ -116,7 +116,8 @@
             "matchUpdateTypes": ["minor", "patch"]
           },
           {
-              "groupName": "PHPStan packages major needs approval",
+              "groupName": "PHPStan packages major",
+              "description": "Major versions needs approval",
               "matchDatasources": [
                 "packagist"
               ],
