@@ -113,8 +113,22 @@
               "phpstan/extension-installer",
               "spaze/phpstan-disallowed-calls"
             ],
-            "separateMajorMinor": false,
-            "separateMultipleMajor": false
-          }
+            "matchUpdateTypes": ["minor", "patch"]
+          },
+          {
+              "groupName": "PHPStan packages major needs approval",
+              "matchDatasources": [
+                "packagist"
+              ],
+              "matchPackageNames": [
+                "phpstan/phpstan",
+                "//phpstan-/",
+                "//larastan/",
+                "phpstan/extension-installer",
+                "spaze/phpstan-disallowed-calls"
+              ],
+              "matchUpdateTypes": ["major"],
+              "dependencyDashboardApproval": true
+            }
     ]
 }
