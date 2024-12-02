@@ -29,15 +29,9 @@
             "prPriority": 10
         },
         {
-            "groupName": "Drupal modules (patch)",
-            "groupSlug": "drupal-modules-patch",
-            "matchUpdateTypes": ["patch"],
-            "matchCurrentVersion": "!/.*(beta|alpha|rc).*/i"
-        },
-        {
-            "groupName": "Drupal modules (minor)",
-            "groupSlug": "drupal-modules-minor",
-            "matchUpdateTypes": ["minor"],
+            "groupName": "Drupal modules",
+            "groupSlug": "drupal-modules",
+            "matchUpdateTypes": ["minor", "patch"],
             "matchCurrentVersion": "!/.*(beta|alpha|rc).*/i"
         },
         {
