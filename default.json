@@ -17,6 +17,7 @@
     "commitMessagePrefix": ":arrow_up:",
     "commitBodyTable": true,
     "prConcurrentLimit": 1,
+    "prHourlyLimit": 10,
     "suppressNotifications": ["prIgnoreNotification", "prEditedNotification"],
     "ignorePlugins": false,
     "platformAutomerge": true,
