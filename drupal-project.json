@@ -32,7 +32,8 @@
             "groupName": "Drupal modules",
             "groupSlug": "drupal-modules",
             "matchUpdateTypes": ["minor", "patch"],
-            "matchCurrentVersion": "!/.*(beta|alpha|rc).*/i"
+            "matchCurrentVersion": "!/.*(beta|alpha|rc).*/i",
+            "matchPackageNames": ["/^drupal//"]
         },
         {
             "matchManagers": ["npm"],
