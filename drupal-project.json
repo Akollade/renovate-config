@@ -7,17 +7,6 @@
     "ignorePaths": ["web/libraries/**", "libraries/**"],
     "packageRules": [
         {
-            "groupName": "Drupal Core",
-            "patch": {
-                "automerge": true,
-                "prPriority": 15
-            },
-            "minor": {"dependencyDashboardApproval": true},
-            "major": {"dependencyDashboardApproval": true},
-            "matchPackageNames": ["/^drupal/core/"],
-            "separateMinorPatch": true
-        },
-        {
             "groupName": "Drupal tooling",
             "description": "Automerge patch and minor updates of Drupal tools",
             "matchPackageNames": [
@@ -34,6 +23,17 @@
             "matchUpdateTypes": ["minor", "patch"],
             "matchCurrentVersion": "!/.*(beta|alpha|rc).*/i",
             "matchPackageNames": ["/^drupal//"]
+        },
+        {
+            "groupName": "Drupal Core",
+            "patch": {
+                "automerge": true,
+                "prPriority": 15
+            },
+            "minor": {"dependencyDashboardApproval": true},
+            "major": {"dependencyDashboardApproval": true},
+            "matchPackageNames": ["/^drupal/core/"],
+            "separateMinorPatch": true
         },
         {
             "matchManagers": ["npm"],
