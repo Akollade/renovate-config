@@ -29,6 +29,7 @@
         "dependencyDashboardApproval": false
     },
     "packageRules": [
+        {"matchManagers": ["nvm"], "enabled": false},
         {"matchDepNames": ["php"], "enabled": false},
         {
             "matchManagers": ["npm"],
