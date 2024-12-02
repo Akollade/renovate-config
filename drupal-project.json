@@ -32,17 +32,17 @@
             "groupName": "Drupal modules (patch)",
             "groupSlug": "drupal-modules-patch",
             "matchUpdateTypes": ["patch"],
+            "matchCurrentVersion": "!/.*(beta|alpha|rc).*/i",
             "automerge": true,
-            "prPriority": 10,
-            "dependencyDashboardApproval": false
+            "prPriority": 10
         },
         {
             "groupName": "Drupal modules (minor)",
             "groupSlug": "drupal-modules-minor",
             "matchUpdateTypes": ["minor"],
+            "matchCurrentVersion": "!/.*(beta|alpha|rc).*/i",
             "automerge": true,
-            "prPriority": 8,
-            "dependencyDashboardApproval": false
+            "prPriority": 8
         },
         {
             "matchManagers": ["npm"],
