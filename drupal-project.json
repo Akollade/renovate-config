@@ -29,48 +29,9 @@
             "prPriority": 10
         },
         {
-            "groupName": "Drupal Commerce modules",
-            "matchPackageNames": ["/^drupal/commerce/"]
-        },
-        {
-            "matchPackageNames": [
-                "drupal/gin",
-                "drupal/gin_toolbar",
-                "drupal/gin_login"
-            ],
-            "groupName": "Drupal Gin admin theme modules"
-        },
-        {
-            "description": "Automerge some Drupal modules that are known to be safe",
-            "groupName": "Drupal modules (safe)",
-            "groupSlug": "drupal-modules-patch-automerge",
-            "matchPackageNames": [
-                "drupal/antibot",
-                "drupal/address",
-                "drupal/admin_toolbar",
-                "drupal/media_file_delete",
-                "drupal/password_policy",
-                "drupal/raven",
-                "drupal/schema_metatag",
-                "drupal/webform",
-                "drupal/dotenv"
-            ],
-            "matchUpdateTypes": ["patch"],
-            "automerge": true,
-            "prPriority": 10
-        },
-        {
-            "description": "Automerge some Drupal modules that are known to be safe and use only minor versions",
-            "groupName": "Drupal modules (safe)",
-            "groupSlug": "drupal-modules-minor-automerge",
-            "matchPackageNames": [
-                "drupal/paragraphs",
-                "drupal/pathauto",
-                "drupal/twig_tweak",
-                "drupal/token",
-                "drupal/advban",
-                "drupal/redirect"
-            ],
+            "description": "Group drupal modules",
+            "groupName": "Drupal modules",
+            "groupSlug": "drupal-modules",
             "matchUpdateTypes": ["minor", "patch"],
             "automerge": true,
             "prPriority": 10
