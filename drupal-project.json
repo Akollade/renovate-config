@@ -29,12 +29,19 @@
             "prPriority": 10
         },
         {
-            "description": "Group drupal modules",
-            "groupName": "Drupal modules",
-            "groupSlug": "drupal-modules",
-            "matchUpdateTypes": ["minor", "patch"],
+            "groupName": "Drupal modules (patch)",
+            "groupSlug": "drupal-modules-patch",
+            "matchUpdateTypes": ["patch"],
             "automerge": true,
             "prPriority": 10,
+            "dependencyDashboardApproval": false
+        },
+        {
+            "groupName": "Drupal modules (minor)",
+            "groupSlug": "drupal-modules-minor",
+            "matchUpdateTypes": ["minor"],
+            "automerge": true,
+            "prPriority": 8,
             "dependencyDashboardApproval": false
         },
         {
