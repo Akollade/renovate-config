@@ -34,7 +34,8 @@
             "groupSlug": "drupal-modules",
             "matchUpdateTypes": ["minor", "patch"],
             "automerge": true,
-            "prPriority": 10
+            "prPriority": 10,
+            "dependencyDashboardApproval": false
         },
         {
             "matchManagers": ["npm"],
