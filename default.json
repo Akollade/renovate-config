@@ -56,7 +56,6 @@
             "description": "Unstable versions needs approval",
             "matchDatasources": ["packagist"],
             "matchCurrentVersion": "/.*(beta|alpha|rc).*/i",
-            "rangeStrategy": "in-range-only",
             "dependencyDashboardApproval": true
         },
         {
