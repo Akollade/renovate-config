@@ -49,6 +49,12 @@
             "matchPackageNames": ["sass-loader"],
             "automerge": true,
             "allowedVersions": "<=16"
+        },
+        {
+            "description": "Need approval for webpack 6 because symfony/webpack encore is not compatible",
+            "matchPackageNames": ["webpack-cli"],
+            "dependencyDashboardApproval": true,
+            "allowedVersions": ">=6"
         }
     ]
 }
