@@ -14,6 +14,12 @@
             "matchPackageNames": [
                 "/^filament//"
             ]
+        },
+        {
+            "description": "Need approval for Tailwind CSS v4",
+            "matchPackageNames": ["tailwindcss"],
+            "dependencyDashboardApproval": true,
+            "allowedVersions": ">=4"
         }
     ]
 }
