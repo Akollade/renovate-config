@@ -16,6 +16,15 @@
             ]
         },
         {
+            "matchManagers": ["npm"],
+            "matchDepTypes": ["devDependencies"],
+            "matchUpdateTypes": ["minor", "patch", "pin", "digest"],
+            "automerge": true,
+            "prPriority": 10,
+            "groupName": "NPM dev dependencies",
+            "groupSlug": "npm-dev-dependencies"
+        },
+        {
             "description": "Need approval for Tailwind CSS v4",
             "matchPackageNames": ["tailwindcss"],
             "dependencyDashboardApproval": true,
