@@ -51,6 +51,12 @@
             "allowedVersions": "<=16"
         },
         {
+            "description": "Need approval for drupal commerce major",
+            "matchPackageNames": ["drupal/commerce"],
+            "dependencyDashboardApproval": true,
+            "allowedVersions": ">=3"
+        }
+        {
             "description": "Need approval for webpack 6 because symfony/webpack encore is not compatible",
             "matchPackageNames": ["webpack-cli"],
             "dependencyDashboardApproval": true,
